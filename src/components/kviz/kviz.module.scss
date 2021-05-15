@@ -1,0 +1,31 @@
+@import '../../static/scss/common/variables.scss';
+
+.kviz {
+  display: grid;
+  grid-gap: $gutter;
+  &__row {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    grid-gap: $gutter;
+    &--correct {
+      box-shadow: 0 0 0 $gutter / 2 $color-green;
+    }
+    &--incorrect {
+      box-shadow: 0 0 0 $gutter / 2 $color-red;
+    }
+  }
+  &__col {
+    background: $color-col;
+    padding: $gutter / 2 $gutter;
+  }
+  &__option {
+    text-align: center;
+    color: $color-white;
+  }
+  &__metaphor {
+    background: $color-metaphor;
+  }
+  &__metonymy {
+    background: $color-metonymy;
+  }
+}
