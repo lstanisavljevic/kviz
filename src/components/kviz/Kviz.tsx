@@ -25,7 +25,10 @@ const Kviz = () => {
     nextContent[matchedRow].status = 'selected'
     nextContent[matchedRow].outcome = outcome
     setContent(nextContent)
-    console.warn(nextContent)
+  }
+
+  function processHtml(input: string) {
+    return { __html: input.replace(/__(.+)__/g, '<strong>$1</strong>') }
   }
 
   const options = ['metaphor', 'metonymy']
@@ -34,6 +37,12 @@ const Kviz = () => {
       {content.map((row) => {
         const { example, solution, explanation, status } = row
         const statusClassName = status ? 'selected' : 'unselected'
+        const exampleRendered = (
+          <span dangerouslySetInnerHTML={processHtml(example)} />
+        )
+        const explanationRendered = (
+          <span dangerouslySetInnerHTML={processHtml(explanation)} />
+        )
         return (
           <div key={example} className={`${styles.kviz__row}`}>
             <div
@@ -41,12 +50,12 @@ const Kviz = () => {
                 styles[`kviz__col--${statusClassName}`]
               }`}
             >
-              {example}
+              {exampleRendered}
               {status && (
                 <div
                   className={`${styles.kviz__col} ${styles.kviz__explanation}`}
                 >
-                  {explanation}
+                  {explanationRendered}
                 </div>
               )}
             </div>

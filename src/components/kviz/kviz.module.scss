@@ -39,18 +39,10 @@
     color: $color-white;
     border: none;
     padding: $gutter / 2 $gutter;
-    // &--correct {
-    //   position: relative;
-    //   &:after {
-    //     display: inline;
-    //     position: absolute;
-    //     right: -$gutter * 2;
-    //     top: 0;
-    //     font-size: $font-size-large;
-    //     color: $color-green;
-    //     content: " ✓"
-    //   }
-    // }
+    &--correct {
+      background: none;
+      color: $color-black;
+    }
     &--incorrect {
       opacity: 0;
       transition: opacity $trans-defaults;
