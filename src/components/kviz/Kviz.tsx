@@ -9,7 +9,8 @@ const Kviz = () => {
   // const [matches, setMatches] = useState(0)
 
   useEffect(() => {
-    setContent(Object.entries(kviz[level]))
+    console.warn(kviz[level])
+    setContent(kviz[level])
   }, [setLevel, setContent])
 
   function handleSelect(
