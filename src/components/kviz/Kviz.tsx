@@ -9,7 +9,6 @@ const Kviz = () => {
   // const [matches, setMatches] = useState(0)
 
   useEffect(() => {
-    console.warn(kviz[level])
     setContent(kviz[level])
   }, [setLevel, setContent])
 
@@ -19,10 +18,12 @@ const Kviz = () => {
     selectedOption: string
   ) {
     const outcome = expectedOption === selectedOption
-    const row = content.findIndex((example) => example[0] === selectedExample)
+    const matchedRow = content.findIndex(
+      (row) => row.example === selectedExample
+    )
     const nextContent = content.slice()
-    nextContent[row].push('selected')
-    nextContent[row].push(outcome)
+    nextContent[matchedRow].status = 'selected'
+    nextContent[matchedRow].outcome = outcome
     setContent(nextContent)
     console.warn(nextContent)
   }
@@ -31,8 +32,12 @@ const Kviz = () => {
   return (
     <div className={styles.kviz}>
       {content.map((row) => {
-        const [example, solution, status, isGood] = row
-        const outcome = status ? (isGood ? 'correct' : 'incorrect') : ''
+        const { example, solution, status, outcome } = row
+        const outcomeClassName = status
+          ? outcome
+            ? 'correct'
+            : 'incorrect'
+          : ''
         return (
           <div
             key={example}
@@ -58,7 +63,7 @@ const Kviz = () => {
             {status && (
               <div
                 className={`${styles.kviz__col} ${styles.kviz__outcome} ${
-                  styles[`kviz__col--${outcome}`]
+                  styles[`kviz__col--${outcomeClassName}`]
                 }`}
               ></div>
             )}
