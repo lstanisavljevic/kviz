@@ -1,4 +1,5 @@
 @import '../../static/scss/common/variables.scss';
+@import '../../static/scss/common/keyframes.scss';
 
 .kviz {
   display: grid;
@@ -10,24 +11,38 @@
   }
   &__col {
     padding: $gutter / 2 $gutter;
-    &--unselected {
-      background-color: $color-col;
+    &--example {
+      background: $color-col;
     }
-    &--correct {
-      color: $color-green;
-    }
-    &--incorrect {
-      color: $color-red;
+    &--outcome {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
   &__outcome {
-    padding: 0;
+    width: $gutter * 2;
+    height: $gutter * 2;
+    border-radius: 50%;
+    &--correct {
+      background: $color-green;
+    }
+    &--incorrect {
+      background: $color-red;
+    }
+  }
+  &__explanation {
+    padding: $gutter / 2 0 0;
     font-size: $font-size-small;
+    animation: scale-text 0.2s ease-in-out;
   }
   &__option {
     text-align: center;
     color: $color-white;
     border: none;
+    &:hover {
+      cursor: pointer;
+    }
   }
   &__metaphor {
     background: $color-metaphor;

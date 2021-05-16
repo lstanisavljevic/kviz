@@ -46,22 +46,34 @@ const Kviz = () => {
         return (
           <div key={example} className={`${styles.kviz__row}`}>
             <div
-              className={`${styles.kviz__col} ${
+              className={`${styles.kviz__col} ${styles[`kviz__col--example`]} ${
                 styles[`kviz__col--${statusClassName}`]
               }`}
             >
               {example}
               {status && (
                 <div
-                  className={`${styles.kviz__col} ${styles.kviz__outcome} ${
-                    styles[`kviz__col--${outcomeClassName}`]
-                  }`}
+                  className={`${styles.kviz__col} ${styles.kviz__explanation}`}
                 >
                   {explanation}
                 </div>
               )}
             </div>
-            {!status &&
+            {status ? (
+              <div
+                className={`${styles.kviz__col} ${
+                  styles[`kviz__col--outcome`]
+                }`}
+              >
+                {status && (
+                  <div
+                    className={`${styles.kviz__outcome} ${
+                      styles[`kviz__outcome--${outcomeClassName}`]
+                    }`}
+                  ></div>
+                )}
+              </div>
+            ) : (
               options.map((option, optionIndex) => (
                 <button
                   key={optionIndex}
@@ -74,7 +86,8 @@ const Kviz = () => {
                 >
                   {option}
                 </button>
-              ))}
+              ))
+            )}
           </div>
         )
       })}
