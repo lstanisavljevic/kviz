@@ -12,15 +12,6 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        {/* <h1 className={styles.title}>
-          The <a href="https://nextjs.org">Next Boilerplate!</a>
-        </h1> */}
-
-        {/* <p className={styles.description}>
-          Get started by editing
-          <code className={styles.code}>src/pages/index.js</code>
-        </p> */}
-
         <Kviz />
       </main>
 

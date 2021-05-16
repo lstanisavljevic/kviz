@@ -28,23 +28,38 @@ const Kviz = () => {
     console.warn(nextContent)
   }
 
+  function getClassNames(status: string, outcome: string) {
+    const statusClassName = status ? 'selected' : 'unselected'
+    const outcomeClassName = status ? (outcome ? 'correct' : 'incorrect') : ''
+    return [statusClassName, outcomeClassName]
+  }
+
   const options = ['metaphor', 'metonymy']
   return (
     <div className={styles.kviz}>
       {content.map((row) => {
-        const { example, solution, status, outcome } = row
-        const outcomeClassName = status
-          ? outcome
-            ? 'correct'
-            : 'incorrect'
-          : ''
+        const { example, solution, explanation, status, outcome } = row
+        const [statusClassName, outcomeClassName] = getClassNames(
+          status,
+          outcome
+        )
         return (
-          <div
-            key={example}
-            className={`${styles.kviz__row} ${styles[`kviz__row--${status}`]}`}
-          >
-            <div className={`${styles.kviz__col} ${styles.kviz__example}`}>
+          <div key={example} className={`${styles.kviz__row}`}>
+            <div
+              className={`${styles.kviz__col} ${
+                styles[`kviz__col--${statusClassName}`]
+              }`}
+            >
               {example}
+              {status && (
+                <div
+                  className={`${styles.kviz__col} ${styles.kviz__outcome} ${
+                    styles[`kviz__col--${outcomeClassName}`]
+                  }`}
+                >
+                  {explanation}
+                </div>
+              )}
             </div>
             {!status &&
               options.map((option, optionIndex) => (
@@ -60,13 +75,6 @@ const Kviz = () => {
                   {option}
                 </button>
               ))}
-            {status && (
-              <div
-                className={`${styles.kviz__col} ${styles.kviz__outcome} ${
-                  styles[`kviz__col--${outcomeClassName}`]
-                }`}
-              ></div>
-            )}
           </div>
         )
       })}
