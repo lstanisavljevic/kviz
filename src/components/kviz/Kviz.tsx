@@ -28,21 +28,12 @@ const Kviz = () => {
     console.warn(nextContent)
   }
 
-  function getClassNames(status: string, outcome: string) {
-    const statusClassName = status ? 'selected' : 'unselected'
-    const outcomeClassName = status ? (outcome ? 'correct' : 'incorrect') : ''
-    return [statusClassName, outcomeClassName]
-  }
-
   const options = ['metaphor', 'metonymy']
   return (
     <div className={styles.kviz}>
       {content.map((row) => {
-        const { example, solution, explanation, status, outcome } = row
-        const [statusClassName, outcomeClassName] = getClassNames(
-          status,
-          outcome
-        )
+        const { example, solution, explanation, status } = row
+        const statusClassName = status ? 'selected' : 'unselected'
         return (
           <div key={example} className={`${styles.kviz__row}`}>
             <div
@@ -59,26 +50,18 @@ const Kviz = () => {
                 </div>
               )}
             </div>
-            {status ? (
-              <div
-                className={`${styles.kviz__col} ${
-                  styles[`kviz__col--outcome`]
-                }`}
-              >
-                {status && (
-                  <div
-                    className={`${styles.kviz__outcome} ${
-                      styles[`kviz__outcome--${outcomeClassName}`]
-                    }`}
-                  ></div>
-                )}
-              </div>
-            ) : (
-              options.map((option, optionIndex) => (
+            {options.map((option, optionIndex) => (
+              <div key={optionIndex} className={styles.kviz__col}>
                 <button
-                  key={optionIndex}
-                  className={`${styles.kviz__col} ${styles.kviz__option} ${
-                    styles[`kviz__${option}`]
+                  className={`${styles.kviz__option} ${
+                    styles[`kviz__option--${statusClassName}`]
+                  } ${styles[`kviz__${option}`]} ${
+                    status &&
+                    styles[
+                      `kviz__option--${
+                        solution === option ? 'correct' : 'incorrect'
+                      }`
+                    ]
                   }`}
                   onClick={() =>
                     !status && handleSelect(example, solution, option)
@@ -86,8 +69,8 @@ const Kviz = () => {
                 >
                   {option}
                 </button>
-              ))
-            )}
+              </div>
+            ))}
           </div>
         )
       })}

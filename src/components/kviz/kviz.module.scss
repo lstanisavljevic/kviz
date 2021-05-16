@@ -8,12 +8,10 @@
     display: grid;
     grid-template-columns: 8fr 1fr 1fr;
     grid-gap: $gutter;
+    border-bottom: 1px solid $color-separator;
+    padding-bottom: $gutter;
   }
   &__col {
-    padding: $gutter / 2 $gutter;
-    &--example {
-      background: $color-col;
-    }
     &--outcome {
       display: flex;
       justify-content: center;
@@ -24,30 +22,41 @@
     width: $gutter * 2;
     height: $gutter * 2;
     border-radius: 50%;
-    &--correct {
-      background: $color-green;
-    }
-    &--incorrect {
-      background: $color-red;
-    }
   }
   &__explanation {
     padding: $gutter / 2 0 0;
     font-size: $font-size-small;
-    animation: scale-text 0.2s ease-in-out;
-  }
-  &__option {
-    text-align: center;
-    color: $color-white;
-    border: none;
-    &:hover {
-      cursor: pointer;
-    }
+    animation: scale-text $trans-defaults;
   }
   &__metaphor {
     background: $color-metaphor;
   }
   &__metonymy {
     background: $color-metonymy;
+  }
+  &__option {
+    text-align: center;
+    color: $color-white;
+    border: none;
+    padding: $gutter / 2 $gutter;
+    // &--correct {
+    //   position: relative;
+    //   &:after {
+    //     display: inline;
+    //     position: absolute;
+    //     right: -$gutter * 2;
+    //     top: 0;
+    //     font-size: $font-size-large;
+    //     color: $color-green;
+    //     content: " ✓"
+    //   }
+    // }
+    &--incorrect {
+      opacity: 0;
+      transition: opacity $trans-defaults;
+    }
+    &--unselected:hover {
+      cursor: pointer;
+    }
   }
 }
