@@ -6,7 +6,7 @@
   grid-gap: $gutter;
   &__row {
     display: grid;
-    grid-template-columns: 8fr 1fr 1fr;
+    grid-template-columns: 6fr 1fr 1fr;
     grid-gap: $gutter;
     border-bottom: 1px solid $color-separator;
     padding-bottom: $gutter;
@@ -28,27 +28,53 @@
     font-size: $font-size-small;
     animation: scale-text $trans-defaults;
   }
+  &__option {
+    text-align: center;
+    color: $color-white;
+    background: $color-green;
+    border-radius: 4px;
+    border: none;
+    padding: $gutter / 2 $gutter * 3;
+    position: relative;
+    font-size: $font-size-base;
+    &--selected {
+      &:after {
+        display: block;
+        content: " ✓";
+        position: absolute;
+        top: $gutter / 3;
+        right: $gutter / 2;
+        font-size: $font-size-large;
+      }
+    }
+    &--correct {
+      background: none;
+    }
+    &--incorrect--fail {
+      &:after {
+        right: calc(50% - 10px);
+        content: " ✕ ";
+        color: $color-red;
+        transform: scale(3);
+      }
+    }
+    &--incorrect--success {
+      opacity: 0;
+    }
+    &--unselected:hover {
+      cursor: pointer;
+    }
+    &--success {
+      border: 2px solid $color-green;
+    }
+    &--fail {
+      border: 2px solid $color-red;
+    }
+  }
   &__metaphor {
     background: $color-metaphor;
   }
   &__metonymy {
     background: $color-metonymy;
-  }
-  &__option {
-    text-align: center;
-    color: $color-white;
-    border: none;
-    padding: $gutter / 2 $gutter;
-    &--correct {
-      background: none;
-      color: $color-black;
-    }
-    &--incorrect {
-      opacity: 0;
-      transition: opacity $trans-defaults;
-    }
-    &--unselected:hover {
-      cursor: pointer;
-    }
   }
 }

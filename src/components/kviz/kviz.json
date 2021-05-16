@@ -26,6 +26,33 @@
         "solution": "metaphor",
         "explanation": "This is a metaphor because we __compare__ what one does with something"
       }
+    ],
+    [
+      {
+        "example": "Bas Scheveningen is the principal __viola__ in the Concertgebouworkest",
+        "solution": "metonymy",
+        "explanation": "This is a metonymy because we __relate__ an instrumentalist to the instrument he plays"
+      },
+      {
+        "example": "Don't be a __dick__",
+        "solution": "metaphor",
+        "explanation": "This is a metaphor because we __compare__ person to something ugly and unpleasant"
+      },
+      {
+        "example": "Many developers write __ugly__ code",
+        "solution": "metaphor",
+        "explanation": "This is a metaphor because we __compare__ readability or maintainability of code with beauty"
+      },
+      {
+        "example": "Write to __finance__",
+        "solution": "metonymy",
+        "explanation": "This is a metonymy because we __relate__ a department in a company to what this department does"
+      },
+      {
+        "example": "Peter does a lot of __shit__",
+        "solution": "metaphor",
+        "explanation": "This is a metaphor because we __compare__ what one does with something"
+      }
     ]
   ]
 }

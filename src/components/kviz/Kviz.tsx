@@ -6,7 +6,7 @@ import styles from './kviz.module.scss'
 const Kviz = () => {
   const [level, setLevel] = useState(0)
   const [content, setContent] = useState([])
-  // const [matches, setMatches] = useState(0)
+  const [answersCount, setAnswersCount] = useState(0)
 
   useEffect(() => {
     setContent(kviz[level])
@@ -25,6 +25,7 @@ const Kviz = () => {
     nextContent[matchedRow].status = 'selected'
     nextContent[matchedRow].outcome = outcome
     setContent(nextContent)
+    setAnswersCount(answersCount + 1)
   }
 
   function processHtml(input: string) {
@@ -34,8 +35,9 @@ const Kviz = () => {
   const options = ['metaphor', 'metonymy']
   return (
     <div className={styles.kviz}>
+      <div>{answersCount}</div>
       {content.map((row) => {
-        const { example, solution, explanation, status } = row
+        const { example, solution, explanation, status, outcome } = row
         const statusClassName = status ? 'selected' : 'unselected'
         const exampleRendered = (
           <span dangerouslySetInnerHTML={processHtml(example)} />
@@ -69,7 +71,7 @@ const Kviz = () => {
                     styles[
                       `kviz__option--${
                         solution === option ? 'correct' : 'incorrect'
-                      }`
+                      }--${outcome ? 'success' : 'fail'}`
                     ]
                   }`}
                   onClick={() =>
@@ -83,6 +85,11 @@ const Kviz = () => {
           </div>
         )
       })}
+      {answersCount === content.length && (
+        <div>
+          <button className={styles.kviz__option}>Ajde</button>
+        </div>
+      )}
     </div>
   )
 }
