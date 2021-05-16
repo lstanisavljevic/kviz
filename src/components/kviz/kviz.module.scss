@@ -5,22 +5,26 @@
   grid-gap: $gutter;
   &__row {
     display: grid;
-    grid-template-columns: 4fr 1fr 1fr;
+    grid-template-columns: 8fr 1fr 1fr;
     grid-gap: $gutter;
-    &--correct {
-      box-shadow: 0 0 0 $gutter / 2 $color-green;
-    }
-    &--incorrect {
-      box-shadow: 0 0 0 $gutter / 2 $color-red;
-    }
   }
   &__col {
     background: $color-col;
     padding: $gutter / 2 $gutter;
+    &--correct {
+      background: $color-green;
+    }
+    &--incorrect {
+      background: $color-red;
+    }
+  }
+  &__outcome {
+    grid-column: span 3;
   }
   &__option {
     text-align: center;
     color: $color-white;
+    border: none;
   }
   &__metaphor {
     background: $color-metaphor;
