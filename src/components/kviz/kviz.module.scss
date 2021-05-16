@@ -70,11 +70,20 @@
     &--fail {
       border: 2px solid $color-red;
     }
+    &--continue {
+      cursor: pointer;
+      padding: $gutter $gutter * 4;
+    }
   }
   &__metaphor {
     background: $color-metaphor;
   }
   &__metonymy {
     background: $color-metonymy;
+  }
+  &__footer {
+    display: flex;
+    justify-content: center;
+    margin-top: $gutter * 4;
   }
 }

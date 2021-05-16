@@ -28,6 +28,12 @@ const Kviz = () => {
     setAnswersCount(answersCount + 1)
   }
 
+  function handleContinueClick() {
+    const nextLevel = level + 1
+    setLevel(nextLevel)
+    setContent(kviz[nextLevel])
+  }
+
   function processHtml(input: string) {
     return { __html: input.replace(/__(.+)__/g, '<strong>$1</strong>') }
   }
@@ -86,8 +92,15 @@ const Kviz = () => {
         )
       })}
       {answersCount === content.length && (
-        <div>
-          <button className={styles.kviz__option}>Ajde</button>
+        <div className={styles.kviz__footer}>
+          <button
+            className={`${styles.kviz__option} ${
+              styles[`kviz__option--continue`]
+            }`}
+            onClick={() => handleContinueClick()}
+          >
+            Ajde
+          </button>
         </div>
       )}
     </div>
