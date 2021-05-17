@@ -42,7 +42,7 @@ const Kviz = () => {
   return (
     <div className={styles.kviz}>
       {content.map((row) => {
-        const { example, solution, explanation, status, outcome } = row
+        const { example, solution, explanation, model, status, outcome } = row
         const statusClassName = status ? 'selected' : 'unselected'
         const exampleRendered = (
           <span dangerouslySetInnerHTML={processHtml(example)} />
@@ -59,10 +59,9 @@ const Kviz = () => {
             >
               {exampleRendered}
               {status && (
-                <div
-                  className={`${styles.kviz__col} ${styles.kviz__explanation}`}
-                >
+                <div className={`${styles.kviz__explanation}`}>
                   {explanationRendered}
+                  <div className={`${styles.kviz__model}`}>{model}</div>
                 </div>
               )}
             </div>

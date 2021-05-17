@@ -35,6 +35,11 @@
     font-size: $font-size-small;
     animation: scale-text $trans-defaults;
   }
+  &__model {
+    padding: $gutter / 2 0 0;
+    text-transform: uppercase;
+    animation: scale-text $trans-defaults;
+  }
   &__option {
     text-align: center;
     color: $color-white;
