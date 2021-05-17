@@ -5,6 +5,15 @@
   display: grid;
   grid-gap: $gutter;
   font-size: $font-size-base;
+  max-height: 80vh;
+  overflow: auto;
+  scroll-behavior: smooth;
+  padding-top: $gutter-big;
+  &:after {
+    display: block;
+    content: "";
+    height: $gutter * 5;
+  }
   @media(min-width: $col-m) {
     font-size: $font-size-medium;
   }
@@ -13,7 +22,13 @@
     grid-template-columns: 4fr 1fr 1fr;
     grid-gap: $gutter;
     border-bottom: 1px solid $color-separator;
-    padding-bottom: $gutter;
+    padding-bottom: $gutter-big;
+    animation: scale-text $trans-defaults;
+    opacity: 0.5;
+    &:last-of-type {
+      opacity: 1;
+      padding-top: $gutter;
+    }
   }
   &__col {
     &--example {
@@ -47,7 +62,6 @@
     }
   }
   &__option {
-    text-align: center;
     background: $color-green;
     border-radius: 4px;
     border: 1px solid $color-black;

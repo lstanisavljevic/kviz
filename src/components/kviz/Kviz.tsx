@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { kviz } from './kviz.json'
 
 import styles from './kviz.module.scss'
@@ -7,10 +7,22 @@ const Kviz = () => {
   const [level, setLevel] = useState(0)
   const [content, setContent] = useState([])
   const [answersCount, setAnswersCount] = useState(0)
+  const [currentQuestion, setCurrentQuestion] = useState(0)
+
+  const kvizRef = useRef(null)
+
+  const settings = {
+    questionTimeout: 1000,
+  }
 
   useEffect(() => {
     setContent(kviz[level])
   }, [setLevel, setContent])
+
+  function scrollToBottom() {
+    const kvizElement = kvizRef.current
+    kvizElement.scrollTop = kvizElement.scrollHeight
+  }
 
   function handleSelect(
     selectedExample: string,
@@ -26,6 +38,11 @@ const Kviz = () => {
     nextContent[matchedRow].outcome = outcome
     setContent(nextContent)
     setAnswersCount(answersCount + 1)
+    scrollToBottom()
+    setTimeout(() => {
+      setCurrentQuestion(currentQuestion + 1)
+      scrollToBottom()
+    }, settings.questionTimeout)
   }
 
   function handleContinueClick() {
@@ -50,8 +67,11 @@ const Kviz = () => {
 
   const options = ['metaphor', 'metonymy']
   return (
-    <div className={styles.kviz}>
-      {content.map((row) => {
+    <div className={styles.kviz} ref={kvizRef}>
+      {content.map((row, rowIndex) => {
+        if (rowIndex > currentQuestion) {
+          return null
+        }
         const { example, solution, explanation, model, status, outcome } = row
         const statusClassName = status ? 'selected' : 'unselected'
         const exampleRendered = (
@@ -84,7 +104,12 @@ const Kviz = () => {
               )}
             </div>
             {options.map((option, optionIndex) => (
-              <div key={optionIndex} className={styles.kviz__col}>
+              <div
+                key={optionIndex}
+                className={`${styles.kviz__col} ${
+                  styles[`kviz__col--outcome`]
+                }`}
+              >
                 <button
                   className={`${styles.kviz__option} ${
                     styles[`kviz__option--${statusClassName}`]
