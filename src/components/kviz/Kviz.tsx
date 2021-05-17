@@ -52,7 +52,14 @@ const Kviz = () => {
   }
 
   function processHtml(input: string) {
-    return { __html: input.replace(/__(.+)__/g, '<strong>$1</strong>') }
+    const inputArray = input.split('__')
+    return inputArray.map((item, index) => {
+      const key = `${item}${index}`
+      if (index > 0 && index < inputArray.length - 1) {
+        return <strong key={key}>{item}</strong>
+      }
+      return <span key={key}>{item}</span>
+    })
   }
 
   interface Row {
@@ -74,13 +81,10 @@ const Kviz = () => {
         }
         const { example, solution, explanation, model, status, outcome } = row
         const statusClassName = status ? 'selected' : 'unselected'
-        const exampleRendered = (
-          <span dangerouslySetInnerHTML={processHtml(example)} />
-        )
+        const exampleRendered = processHtml(example)
         const explanationRendered = (
           <>
-            <span>{processExplanation(row)}</span>{' '}
-            <span dangerouslySetInnerHTML={processHtml(explanation)} />
+            <span>{processExplanation(row)}</span> {processHtml(explanation)}
           </>
         )
         return (
