@@ -5,10 +5,8 @@
   display: grid;
   grid-gap: $gutter;
   font-size: $font-size-base;
-  max-height: 80vh;
   overflow: auto;
   scroll-behavior: smooth;
-  padding-top: $gutter-big;
   &:after {
     display: block;
     content: "";
@@ -22,12 +20,12 @@
     grid-template-columns: 4fr 1fr 1fr;
     grid-gap: $gutter;
     border-bottom: 1px solid $color-separator;
-    padding-bottom: $gutter-big;
+    padding: $gutter 0 $gutter-big;
     animation: scale-text $trans-defaults;
+    transform-origin: top;
     opacity: 0.5;
     &:last-of-type {
       opacity: 1;
-      padding-top: $gutter;
     }
   }
   &__col {
@@ -35,7 +33,7 @@
       padding: 0 $gutter 0 0;
       @media(max-width: $col-m) {
         grid-column: span 3;
-        padding-bottom: 0 0 $gutter;
+        padding: 0 0 $gutter;
       }
     }
     &--outcome {
@@ -53,6 +51,7 @@
     padding: $gutter / 2 0 0;
     font-size: $font-size-small;
     animation: scale-text $trans-defaults;
+    transform-origin: top;
   }
   &__model {
     padding: $gutter / 2 0 0;

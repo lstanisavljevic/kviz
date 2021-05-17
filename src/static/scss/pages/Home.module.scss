@@ -2,7 +2,7 @@
 
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,12 +10,13 @@
 }
 
 .main {
-  padding: 5rem 0;
+  padding: 3rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-height: 80vh;
 }
 
 .footer {
@@ -61,7 +62,8 @@
 
 .explanation {
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: $font-size-base;
+  margin-bottom: 0;
 }
 
 .code {

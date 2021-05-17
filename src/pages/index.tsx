@@ -11,6 +11,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <h1 className={styles.title}>A little quiz</h1>
+      <p className={styles.explanation}>
+        Find uses of metaphor and metonymy in underlined words and expressions
+      </p>
       <main className={styles.main}>
         <Kviz />
       </main>
