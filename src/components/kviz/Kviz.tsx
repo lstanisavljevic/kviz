@@ -75,7 +75,7 @@ const Kviz = () => {
                 <div className={`${styles.kviz__explanation}`}>
                   {explanationRendered}
                   <div className={`${styles.kviz__model}`}>
-                    This {solution} belongs to conceptual {solution} model:{' '}
+                    It is based on conceptual {solution}:{' '}
                     <span className={`${styles.kviz__model__name}`}>
                       {model}
                     </span>

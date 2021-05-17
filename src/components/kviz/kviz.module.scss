@@ -5,6 +5,9 @@
   display: grid;
   grid-gap: $gutter;
   font-size: $font-size-base;
+  @media(min-width: $col-m) {
+    font-size: $font-size-medium;
+  }
   &__row {
     display: grid;
     grid-template-columns: 4fr 1fr 1fr;
@@ -62,6 +65,7 @@
         color: $color-green;
         font-size: $font-size-large;
         transform: scale(2);
+        animation: scale-text $trans-defaults;
       }
     }
     &--correct {
