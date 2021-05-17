@@ -7,10 +7,11 @@
   font-size: $font-size-base;
   overflow: auto;
   scroll-behavior: smooth;
+  max-width: $col-xl;
   &:after {
     display: block;
     content: "";
-    height: $gutter * 5;
+    height: 7rem;
   }
   @media(min-width: $col-m) {
     font-size: $font-size-medium;

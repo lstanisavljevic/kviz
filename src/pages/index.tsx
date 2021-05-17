@@ -20,7 +20,7 @@ export default function Home() {
         <Kviz />
       </main>
 
-      <footer className={styles.footer}></footer>
+      {/* <footer className={styles.footer}></footer> */}
     </div>
   )
 }

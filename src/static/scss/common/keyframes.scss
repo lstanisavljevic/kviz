@@ -9,6 +9,7 @@
 @keyframes bravo {
   0% {
     transform: rotate(0deg);
+    top: 40%;
     color: $color-metonymy
   }
   40% {
@@ -17,10 +18,11 @@
   }
   60% {
     transform: rotate(360deg) rotateY(2 * 360deg) scale(10);
-    color: $color-metaphor
+    color: $color-metaphor;
   }
   100% {
     transform: rotate(0deg);
-    color: $color-green
+    color: $color-green;
+    bottom: 10%;
   }
 }

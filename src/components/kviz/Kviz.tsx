@@ -12,7 +12,7 @@ const Kviz = () => {
   const kvizRef = useRef(null)
 
   const settings = {
-    questionTimeout: 2400,
+    questionTimeout: 400,
   }
 
   useEffect(() => {
@@ -41,7 +41,9 @@ const Kviz = () => {
     scrollToBottom()
     setTimeout(() => {
       setCurrentQuestion(currentQuestion + 1)
-      scrollToBottom()
+      if (currentQuestion < content.length - 1) {
+        scrollToBottom()
+      }
     }, settings.questionTimeout)
   }
 
