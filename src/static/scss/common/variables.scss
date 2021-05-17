@@ -6,18 +6,19 @@
 $color-primary: #0070f3;
 $color-black: black;
 $color-white: white;
-$color-green: #2db811;
-$color-red: #ce2715;
+$color-green: #33bb18;
+$color-red: #da4333;
 
 $color-col: #f2f2f2;
 $color-separator: #dadada;
-$color-metaphor: #d88621;
-$color-metonymy: #2697ba;
+$color-metaphor: #334c9d;
+$color-metonymy: #652691;
 
 // Font sizes
 $font-size-small: 14px;
 $font-size-base: 16px;
-$font-size-large: 20px;
+$font-size-medium: 20px;
+$font-size-large: 30px;
 
 // Columns
 $col-xxs: 240px;
@@ -29,4 +30,5 @@ $col-xl: 980px;
 $col-max: 1200px;
 
 $gutter: 10px;
+$gutter-big: 20px;
 $trans-defaults: 0.2s ease-in-out;

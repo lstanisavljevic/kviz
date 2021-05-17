@@ -74,7 +74,12 @@ const Kviz = () => {
               {status && (
                 <div className={`${styles.kviz__explanation}`}>
                   {explanationRendered}
-                  <div className={`${styles.kviz__model}`}>{model}</div>
+                  <div className={`${styles.kviz__model}`}>
+                    This {solution} belongs to conceptual {solution} model:{' '}
+                    <span className={`${styles.kviz__model__name}`}>
+                      {model}
+                    </span>
+                  </div>
                 </div>
               )}
             </div>
@@ -110,7 +115,7 @@ const Kviz = () => {
             }`}
             onClick={() => handleContinueClick()}
           >
-            Ajde
+            Next
           </button>
         </div>
       )}
