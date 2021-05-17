@@ -12,7 +12,7 @@ const Kviz = () => {
   const kvizRef = useRef(null)
 
   const settings = {
-    questionTimeout: 1000,
+    questionTimeout: 4000,
   }
 
   useEffect(() => {
