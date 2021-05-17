@@ -12,7 +12,7 @@ const Kviz = () => {
   const kvizRef = useRef(null)
 
   const settings = {
-    questionTimeout: 4000,
+    questionTimeout: 2400,
   }
 
   useEffect(() => {
@@ -49,6 +49,8 @@ const Kviz = () => {
     const nextLevel = level + 1
     setLevel(nextLevel)
     setContent(kviz[nextLevel])
+    setAnswersCount(0)
+    setCurrentQuestion(0)
   }
 
   function processHtml(input: string) {
@@ -138,14 +140,18 @@ const Kviz = () => {
       })}
       {answersCount === content.length && (
         <div className={styles.kviz__footer}>
-          <button
-            className={`${styles.kviz__option} ${
-              styles[`kviz__option--continue`]
-            }`}
-            onClick={() => handleContinueClick()}
-          >
-            Next
-          </button>
+          {level < kviz.length - 1 ? (
+            <button
+              className={`${styles.kviz__option} ${
+                styles[`kviz__option--continue`]
+              }`}
+              onClick={() => handleContinueClick()}
+            >
+              Next
+            </button>
+          ) : (
+            <span>Bravo</span>
+          )}
         </div>
       )}
     </div>
