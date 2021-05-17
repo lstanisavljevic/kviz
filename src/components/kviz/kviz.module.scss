@@ -23,9 +23,8 @@
     padding: $gutter 0 $gutter-big;
     animation: scale-text $trans-defaults;
     transform-origin: top;
-    opacity: 0.5;
     &:last-of-type {
-      opacity: 1;
+      padding: $gutter * 4 0;
     }
   }
   &__col {
