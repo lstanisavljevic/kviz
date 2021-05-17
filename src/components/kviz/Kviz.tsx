@@ -150,7 +150,7 @@ const Kviz = () => {
               Next
             </button>
           ) : (
-            <span>Bravo</span>
+            <span className={styles.kviz__bravo}>Bravo!</span>
           )}
         </div>
       )}

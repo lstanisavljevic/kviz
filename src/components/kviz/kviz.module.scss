@@ -122,4 +122,10 @@
     justify-content: center;
     margin-top: $gutter * 4;
   }
+  &__bravo {
+    font-size: $font-size-large * 2;
+    position: fixed;
+    animation: bravo 7s ease-in-out forwards;
+    font-weight: bold;
+  }
 }
