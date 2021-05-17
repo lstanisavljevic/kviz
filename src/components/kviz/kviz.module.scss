@@ -6,12 +6,19 @@
   grid-gap: $gutter;
   &__row {
     display: grid;
-    grid-template-columns: 6fr 1fr 1fr;
+    grid-template-columns: 4fr 1fr 1fr;
     grid-gap: $gutter;
     border-bottom: 1px solid $color-separator;
     padding-bottom: $gutter;
   }
   &__col {
+    &--example {
+      padding: 0 $gutter 0 0;
+      @media(max-width: $col-m) {
+        grid-column: span 3;
+        padding-bottom: 0 0 $gutter;
+      }
+    }
     &--outcome {
       display: flex;
       justify-content: center;
