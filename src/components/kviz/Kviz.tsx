@@ -41,7 +41,6 @@ const Kviz = () => {
   const options = ['metaphor', 'metonymy']
   return (
     <div className={styles.kviz}>
-      <div>{answersCount}</div>
       {content.map((row) => {
         const { example, solution, explanation, status, outcome } = row
         const statusClassName = status ? 'selected' : 'unselected'

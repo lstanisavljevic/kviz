@@ -2,56 +2,64 @@
   "kviz": [
     [
       {
-        "example": "Write to __finance__",
+        "example": "Check with __payroll__ why you weren't reimbursed for commuting.",
         "solution": "metonymy",
-        "explanation": "This is a metonymy because we __relate__ a department in a company to what this department does"
+        "explanation": "we __relate__ a department in a company to what this department does",
+        "model": "performer for action"
       },
       {
-        "example": "Don't be a __dick__",
+        "example": "Stay __cool__.",
         "solution": "metaphor",
-        "explanation": "This is a metaphor because we __compare__ person to something ugly and unpleasant"
+        "explanation": "we __compare__ coolness with calmness",
+        "model": "temper is temperature"
       },
       {
-        "example": "Bas Scheveningen is the principal __viola__ in the Concertgebouworkest",
+        "example": "Using __graphic language__ at work has been long frowned upon.",
         "solution": "metonymy",
-        "explanation": "This is a metonymy because we __relate__ an instrumentalist to the instrument he plays"
+        "explanation": "we __relate__ visual explicitness to verbal one",
+        "model": "visual for verbal"
       },
       {
-        "example": "Many developers write __ugly__ code",
-        "solution": "metaphor",
-        "explanation": "This is a metaphor because we __compare__ readability or maintainability of code with beauty"
-      },
-      {
-        "example": "Peter does a lot of __shit__",
-        "solution": "metaphor",
-        "explanation": "This is a metaphor because we __compare__ what one does with something"
-      }
-    ],
-    [
-      {
-        "example": "Bas Scheveningen is the principal __viola__ in the Concertgebouworkest",
+        "example": "Using graphic language at work has been long __frowned upon__.",
         "solution": "metonymy",
-        "explanation": "This is a metonymy because we __relate__ an instrumentalist to the instrument he plays"
+        "explanation": "we __relate__ a certain face gesture to the usual meaning of that gesture",
+        "model": "gesture for meaning"
       },
       {
-        "example": "Don't be a __dick__",
+        "example": "This movie is a real __junk__.",
         "solution": "metaphor",
-        "explanation": "This is a metaphor because we __compare__ person to something ugly and unpleasant"
+        "explanation": "we __compare__ the movie to domestic junk in terms of worthiness",
+        "model": "creation is every-day life"
       },
       {
-        "example": "Many developers write __ugly__ code",
-        "solution": "metaphor",
-        "explanation": "This is a metaphor because we __compare__ readability or maintainability of code with beauty"
-      },
-      {
-        "example": "Write to __finance__",
+        "example": "Don't __be__ that way.",
         "solution": "metonymy",
-        "explanation": "This is a metonymy because we __relate__ a department in a company to what this department does"
+        "explanation": "we __relate__ a person to that person's behaviour",
+        "model": "person for behaviour"
       },
       {
-        "example": "Peter does a lot of __shit__",
+        "example": "But the question is where the __line should be drawn__.",
         "solution": "metaphor",
-        "explanation": "This is a metaphor because we __compare__ what one does with something"
+        "explanation": "we __compare__ a graphical line, often used as delimiter, to the limit in general",
+        "model": "visual is semantic"
+      },
+      {
+        "example": "Our today's guest is the principal __viola__ in the Concertgebouworkest.",
+        "solution": "metonymy",
+        "explanation": "we __relate__ an instrumentalist to the instrument he plays",
+        "model": "worker for tool"
+      },
+      {
+        "example": "There is no reason to use such __harsh__ words.",
+        "solution": "metaphor",
+        "explanation": "we __compare__ harshness of certain words to physical harshness",
+        "model": "language is physical world"
+      },
+      {
+        "example": "Many developers write __ugly__ code.",
+        "solution": "metaphor",
+        "explanation": "we __compare__ quality, readability or maintainability of code with beauty",
+        "model": "quality is beauty"
       }
     ]
   ]
