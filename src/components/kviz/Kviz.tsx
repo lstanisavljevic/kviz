@@ -38,6 +38,16 @@ const Kviz = () => {
     return { __html: input.replace(/__(.+)__/g, '<strong>$1</strong>') }
   }
 
+  interface Row {
+    outcome: boolean
+    solution: string
+  }
+
+  function processExplanation(row: Row) {
+    const { outcome, solution } = row
+    return `${outcome === true ? 'Yes' : 'No'}, this is a ${solution}, because `
+  }
+
   const options = ['metaphor', 'metonymy']
   return (
     <div className={styles.kviz}>
@@ -48,7 +58,10 @@ const Kviz = () => {
           <span dangerouslySetInnerHTML={processHtml(example)} />
         )
         const explanationRendered = (
-          <span dangerouslySetInnerHTML={processHtml(explanation)} />
+          <>
+            <span>{processExplanation(row)}</span>{' '}
+            <span dangerouslySetInnerHTML={processHtml(explanation)} />
+          </>
         )
         return (
           <div key={example} className={`${styles.kviz__row}`}>
