@@ -7,7 +7,9 @@
   font-size: $font-size-base;
   overflow: auto;
   scroll-behavior: smooth;
+  width: 100%;
   max-width: $col-xl;
+  margin-top: $gutter-big;
   &:after {
     display: block;
     content: "";
@@ -18,14 +20,17 @@
   }
   &__row {
     display: grid;
-    grid-template-columns: 4fr 1fr 1fr;
     grid-gap: $gutter;
-    border-bottom: 1px solid $color-separator;
-    padding: $gutter 0 $gutter-big;
+    grid-template-columns: minmax(0, 1fr) 150px 150px;
+    padding: $gutter;
     animation: scale-text $trans-defaults;
     transform-origin: top;
+    border: 1px solid $color-col;
     &:last-of-type {
-      padding: $gutter * 4 0;
+      background: $color-green;
+    }
+    @media(max-width: $col-m) {
+      grid-template-columns: minmax(0, 1fr) auto auto;
     }
   }
   &__col {
@@ -33,13 +38,14 @@
       padding: 0 $gutter 0 0;
       @media(max-width: $col-m) {
         grid-column: span 3;
-        padding: 0 0 $gutter;
       }
     }
     &--outcome {
       display: flex;
-      justify-content: center;
       align-items: center;
+      @media(min-width: $col-m) {
+        justify-content: center;
+      }
     }
   }
   &__outcome {
@@ -64,7 +70,7 @@
     background: $color-green;
     border-radius: 4px;
     border: 1px solid $color-black;
-    padding: $gutter / 2 $gutter-big;
+    padding: $gutter / 2 $gutter;
     position: relative;
     font-size: $font-size-base;
     &--selected {

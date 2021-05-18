@@ -16,11 +16,7 @@ export default function Home() {
         Find uses of metaphor and metonymy in words and expressions written in
         bold
       </p>
-      <main className={styles.main}>
-        <Kviz />
-      </main>
-
-      {/* <footer className={styles.footer}></footer> */}
+      <Kviz />
     </div>
   )
 }
