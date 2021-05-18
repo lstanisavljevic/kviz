@@ -20,7 +20,7 @@
         "model": "creation is every-day life"
       },
       {
-        "example": "Using __graphic language__ at work has been long frowned upon.",
+        "example": "Using __graphic__ language at work has been long frowned upon.",
         "solution": "metonymy",
         "explanation": "we __relate__ visual explicitness to verbal one",
         "model": "visual for verbal"
@@ -62,6 +62,64 @@
         "solution": "metaphor",
         "explanation": "we __compare__ quality, readability or maintainability of code with beauty",
         "model": "quality is beauty"
+      }
+    ],
+    [
+      {
+        "example": "<head>",
+        "solution": "metaphor",
+        "explanation": "we __compare__ the HTML <head> element with the living being's head in terms of its relative position",
+        "model": "html is living being"
+      },
+      {
+        "example": "<article>",
+        "solution": "metonymy",
+        "explanation": "we __relate__ the HTML <article> element with what it contains",
+        "model": "container for content"
+      },
+      {
+        "example": "<main>",
+        "solution": "metonymy",
+        "explanation": "we __relate__ the HTML <main> element with its semantical position in the document's hierarchy",
+        "model": "element for role"
+      },
+      {
+        "example": "<label>",
+        "solution": "metaphor",
+        "explanation": "we __compare__ the HTML <label> element with the physical label in terms of function",
+        "model": "html is physical world"
+      },
+      {
+        "example": "<aside>",
+        "solution": "metonymy",
+        "explanation": "we __relate__ the HTML <aside> element with its position on screen",
+        "model": "element for position"
+      }
+    ],
+    [
+      {
+        "example": "<input type=\"__radio__\">",
+        "solution": "metaphor",
+        "explanation": "we __compare__ the value of an attribute with buttons on an actual radio receiver in terms that selecting one deselects others",
+        "model": "html form is radio device"
+      },
+      {
+        "example": "<input type=\"__reset__\">",
+        "solution": "metonymy",
+        "explanation": "we __relate__ the value of an attribute to this <input> element does",
+        "model": "attribute for purpose"
+      },
+      {
+        "example": "<video src=\"video.mp4\" __poster__=\"image.jpg\">",
+        "solution": "metaphor",
+        "explanation": "we __compare__ the name of an attribute to a physical poster in terms of appearance",
+        "model": "html is physical world"
+      },
+      {
+        "example": "<label __for__=\"username\">",
+        "solution": "metonymy",
+        "explanation": "we __relate__ the name of an attribute to the purpose of connecting the label to its corresponding form element",
+        "model": "attribute name for purpose"
       }
     ]
   ]
