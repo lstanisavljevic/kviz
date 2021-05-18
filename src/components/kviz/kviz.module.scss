@@ -75,12 +75,9 @@
         position: absolute;
         top: 0;
         right: -$gutter;
-        color: $color-green;
         font-size: $font-size-large;
-        font-weight: bold;
         transform: scale(2);
         animation: scale-text $trans-defaults;
-        text-shadow: -0.5px -0.5px 0px $color-black;
       }
     }
     &--correct {
@@ -90,8 +87,7 @@
       background: black;
       &:after {
         right: calc(50% - 10px);
-        content: " ✕ ";
-        color: $color-red;
+        content: "✕";
         transform: scale(2);
       }
     }
@@ -110,7 +106,6 @@
     &--continue {
       cursor: pointer;
       color: $color-white;
-      padding: $gutter $gutter * 4;
     }
   }
   &__metaphor {

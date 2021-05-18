@@ -156,7 +156,9 @@ const Kviz = () => {
               Next
             </button>
           ) : (
-            <span className={styles.kviz__bravo}>Bravo!</span>
+            <span className={styles.kviz__bravo} role="img" aria-label="bravo!">
+              🍒
+            </span>
           )}
         </div>
       )}
