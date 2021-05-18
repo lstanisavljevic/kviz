@@ -2,16 +2,22 @@
   "kviz": [
     [
       {
+        "example": "Whatever happens, just stay __cool__.",
+        "solution": "metaphor",
+        "explanation": "we __compare__ coolness with calmness",
+        "model": "temper is temperature"
+      },
+      {
         "example": "Check with __payroll__ why you weren't reimbursed for commuting.",
         "solution": "metonymy",
         "explanation": "we __relate__ a department in a company to what this department does",
         "model": "performer for action"
       },
       {
-        "example": "Stay __cool__.",
+        "example": "This movie is a real __junk__.",
         "solution": "metaphor",
-        "explanation": "we __compare__ coolness with calmness",
-        "model": "temper is temperature"
+        "explanation": "we __compare__ the movie to domestic junk in terms of worthiness",
+        "model": "creation is every-day life"
       },
       {
         "example": "Using __graphic language__ at work has been long frowned upon.",
@@ -24,12 +30,6 @@
         "solution": "metonymy",
         "explanation": "we __relate__ a certain face gesture to the usual meaning of that gesture",
         "model": "gesture for meaning"
-      },
-      {
-        "example": "This movie is a real __junk__.",
-        "solution": "metaphor",
-        "explanation": "we __compare__ the movie to domestic junk in terms of worthiness",
-        "model": "creation is every-day life"
       }
     ],
     [
@@ -40,22 +40,22 @@
         "model": "person for behaviour"
       },
       {
-        "example": "But the question is where the __line should be drawn__.",
+        "example": "The question is where the __line should be drawn__.",
         "solution": "metaphor",
         "explanation": "we __compare__ a graphical line, often used as delimiter, to the limit in general",
         "model": "visual is semantic"
-      },
-      {
-        "example": "Our today's guest is the principal __viola__ in the Concertgebouworkest.",
-        "solution": "metonymy",
-        "explanation": "we __relate__ an instrumentalist to the instrument he plays",
-        "model": "worker for tool"
       },
       {
         "example": "There is no reason to use such __harsh__ words.",
         "solution": "metaphor",
         "explanation": "we __compare__ harshness of certain words to physical harshness",
         "model": "language is physical world"
+      },
+      {
+        "example": "Our guest is the principal __viola__ in the Concertgebouworkest.",
+        "solution": "metonymy",
+        "explanation": "we __relate__ an instrumentalist to the instrument he plays",
+        "model": "worker for tool"
       },
       {
         "example": "Many developers write __ugly__ code.",
