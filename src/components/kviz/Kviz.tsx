@@ -12,7 +12,7 @@ const Kviz = () => {
   const kvizRef = useRef(null)
 
   const settings = {
-    questionTimeout: 400,
+    questionTimeout: 1400,
   }
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const Kviz = () => {
 
   function scrollToBottom() {
     const kvizElement = kvizRef.current
-    kvizElement.scrollTop = kvizElement.scrollHeight
+    kvizElement.scrollIntoViewIfNeeded({ behavior: 'smooth', block: 'end' })
   }
 
   function handleSelect(
@@ -37,13 +37,12 @@ const Kviz = () => {
     nextContent[matchedRow].status = 'selected'
     nextContent[matchedRow].outcome = outcome
     setContent(nextContent)
-    setAnswersCount(answersCount + 1)
-    scrollToBottom()
     setTimeout(() => {
+      setAnswersCount(answersCount + 1)
       setCurrentQuestion(currentQuestion + 1)
-      if (currentQuestion < content.length - 1) {
-        scrollToBottom()
-      }
+      // if (currentQuestion < content.length - 1) {
+      scrollToBottom()
+      // }
     }, settings.questionTimeout)
   }
 
@@ -78,7 +77,7 @@ const Kviz = () => {
 
   const options = ['metaphor', 'metonymy']
   return (
-    <div className={styles.kviz} ref={kvizRef}>
+    <div className={styles.kviz}>
       {content.map((row, rowIndex) => {
         if (rowIndex > currentQuestion) {
           return null
@@ -92,7 +91,12 @@ const Kviz = () => {
           </>
         )
         return (
-          <div key={example} className={`${styles.kviz__row}`}>
+          <div
+            key={example}
+            className={`${styles.kviz__row} ${
+              currentQuestion === rowIndex && styles['kviz__row--last']
+            }`}
+          >
             <div
               className={`${styles.kviz__col} ${styles[`kviz__col--example`]} ${
                 styles[`kviz__col--${statusClassName}`]
@@ -156,6 +160,7 @@ const Kviz = () => {
           )}
         </div>
       )}
+      <div ref={kvizRef}></div>
     </div>
   )
 }

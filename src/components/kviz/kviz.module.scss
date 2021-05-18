@@ -10,11 +10,6 @@
   width: 100%;
   max-width: $col-xl;
   margin-top: $gutter-big;
-  &:after {
-    display: block;
-    content: "";
-    height: 7rem;
-  }
   @media(min-width: $col-m) {
     font-size: $font-size-medium;
   }
@@ -26,8 +21,8 @@
     animation: scale-text $trans-defaults;
     transform-origin: top;
     border: 1px solid $color-col;
-    &:last-of-type {
-      background: $color-green;
+    &--last {
+      border-color: $color-black;
     }
     @media(max-width: $col-m) {
       grid-template-columns: minmax(0, 1fr) auto auto;
@@ -127,11 +122,10 @@
   &__footer {
     display: flex;
     justify-content: center;
-    margin-top: $gutter * 4;
+    padding: $gutter;
   }
   &__bravo {
     font-size: $font-size-large * 2;
-    position: fixed;
     animation: bravo 7s ease-in-out forwards;
     font-weight: bold;
   }
