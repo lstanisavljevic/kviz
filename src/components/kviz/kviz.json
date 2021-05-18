@@ -121,6 +121,38 @@
         "explanation": "we __relate__ the name of an attribute to the purpose of connecting the label to its corresponding form element",
         "model": "attribute name for purpose"
       }
+    ],
+    [
+      {
+        "example": "display: __flex__",
+        "solution": "metaphor",
+        "explanation": "we __compare__ the flexibility of items within flexbox to the flexibility in nature",
+        "model": "css is physical world"
+      },
+      {
+        "example": "background-size: __contain__",
+        "solution": "metonymy",
+        "explanation": "we __relate__ the value to the purpose, e.g. it should be contained in the parent element",
+        "model": "value for purpose"
+      },
+      {
+        "example": "__box-sizing__: border-box;",
+        "solution": "metaphor",
+        "explanation": "we __compare__ an HTML element to the physical box in terms that both are in rectangular shape",
+        "model": "html is physical world"
+      },
+      {
+        "example": "font-size: __inherit__",
+        "solution": "metaphor",
+        "explanation": "we __compare__ inheriting a property from parent element in CSS to the way children in the real world inherit properties from their parents",
+        "model": "css is physical world"
+      },
+      {
+        "example": "cursor: __wait__",
+        "solution": "metonymy",
+        "explanation": "we __relate__ the value to the message, meaning that cursor shape should suggest user should wait until current action is done",
+        "model": "value for purpose"
+      }
     ]
   ]
 }
