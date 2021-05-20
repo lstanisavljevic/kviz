@@ -4,6 +4,7 @@ import { kviz } from './kviz.json'
 import styles from './kviz.module.scss'
 
 const Kviz = () => {
+  const [isStarted, setIsStarted] = useState(false)
   const [level, setLevel] = useState(0)
   const [title, setTitle] = useState('')
   const [questions, setQuestions] = useState([])
@@ -23,7 +24,7 @@ const Kviz = () => {
 
   function scrollToBottom() {
     const kvizElement = kvizRef.current
-    kvizElement.scrollIntoViewIfNeeded({ behavior: 'smooth', block: 'end' })
+    kvizElement.scrollIntoViewIfNeeded({ behavior: 'smooth' })
   }
 
   function handleSelect(
@@ -77,7 +78,7 @@ const Kviz = () => {
   }
 
   const options = ['metaphor', 'metonymy']
-  return (
+  return isStarted ? (
     <div className={styles.kviz}>
       <h2 className={styles.kviz__subtitle}>
         {level + 1}. {title}
@@ -166,8 +167,15 @@ const Kviz = () => {
           )}
         </div>
       )}
-      <div ref={kvizRef}></div>
+      <div className={styles.kviz__scrollTarget} ref={kvizRef}></div>
     </div>
+  ) : (
+    <button
+      className={`${styles.kviz__option} ${styles[`kviz__option--continue`]}`}
+      onClick={() => setIsStarted(true)}
+    >
+      Start kviz
+    </button>
   )
 }
 

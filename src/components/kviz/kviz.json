@@ -185,7 +185,7 @@
           "model": "name for time context"
         },
         {
-          "example": "new Promise((resolve, reject) => { ... }).then(() => { ... }).__catch__(() => { ... })",
+          "example": "__catch__(() => { ... })",
           "solution": "metaphor",
           "explanation": "we __compare__ catching an API error to catching a physical object in terms of purpose, to prevent it from falling and breaking",
           "model": "API is real life"
@@ -208,28 +208,28 @@
       "title": "JS concepts",
       "questions": [
         {
-          "example": "__const { someProp, otherProp } = whatever__",
+          "example": "const { someProp, otherProp } = whatever",
           "solution": "metonymy",
           "explanation": "destructuring is a metonymical concept. We __relate__ object properties to parent object",
           "model": "part for whole"
         },
         {
-          "example": "__someArray.forEach((item, index) => { ... })__",
+          "example": "someArray.forEach((item, index) => { ... })",
           "solution": "metonymy",
           "explanation": "any iteration in any programming language is metonymical. We __relate__ currently iterated item to parent",
           "model": "part for whole"
         },
         {
-          "example": "__someMethod(a) => { return (b) => { return (c) => { return a + b * c }}}__",
-          "solution": "metonymy",
-          "explanation": "currying is typically metonymical. We __relate__ every further function to the outcome of the previous in the chain",
-          "model": "successor for predecessor"
-        },
-        {
-          "example": "__function factorial(a) { if (a === 1) { return a } return a * factorial(a - 1) }__",
+          "example": "function fct(a) { if (a === 1) { return a } return a * fct(a - 1) }",
           "solution": "metonymy",
           "explanation": "recursion is probably the most metonymical of all, because we __relate__ recursive function to nothing else but itself",
           "model": "part for whole"
+        },
+        {
+          "example": "return (b) => { return (c) => { return a + b * c }}",
+          "solution": "metonymy",
+          "explanation": "currying is typically metonymical. We __relate__ every further function to the outcome of the previous in the chain",
+          "model": "successor for predecessor"
         }
       ]
     }

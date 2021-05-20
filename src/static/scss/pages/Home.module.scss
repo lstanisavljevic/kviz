@@ -2,7 +2,7 @@
 
 .container {
   min-height: 100vh;
-  padding: 0 1rem $gutter;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,7 +76,6 @@
 .explanation {
   line-height: 1.5;
   font-size: $font-size-base;
-  margin-bottom: 0;
   width: 20rem;
 }
 
