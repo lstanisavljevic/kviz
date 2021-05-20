@@ -52,7 +52,16 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  background: $color-black;
+  color: $color-white;
+  display: flex;
+  align-items: center;
+  text-indent: -0.46rem;
+  text-shadow: -1px 0 0 $color-black;
 }
 
 .title,

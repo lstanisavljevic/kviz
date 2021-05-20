@@ -79,9 +79,9 @@ const Kviz = () => {
   const options = ['metaphor', 'metonymy']
   return (
     <div className={styles.kviz}>
-      <p className={styles.kviz__subtitle}>
+      <h2 className={styles.kviz__subtitle}>
         {level + 1}. {title}
-      </p>
+      </h2>
       {questions.map((row, rowIndex) => {
         if (rowIndex > currentQuestion) {
           return null
