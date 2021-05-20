@@ -1,198 +1,219 @@
 {
   "kviz": [
-    [
-      {
-        "example": "Whatever happens, just stay __cool__.",
-        "solution": "metaphor",
-        "explanation": "we __compare__ coolness with calmness",
-        "model": "temper is temperature"
-      },
-      {
-        "example": "Check with __payroll__ why you weren't reimbursed for commuting.",
-        "solution": "metonymy",
-        "explanation": "we __relate__ a department in a company to what this department does",
-        "model": "performer for action"
-      },
-      {
-        "example": "This movie is a real __junk__.",
-        "solution": "metaphor",
-        "explanation": "we __compare__ the movie to domestic junk in terms of worthiness",
-        "model": "creation is every-day life"
-      },
-      {
-        "example": "Using __graphic__ language at work has been long frowned upon.",
-        "solution": "metonymy",
-        "explanation": "we __relate__ visual explicitness to verbal one",
-        "model": "visual for verbal"
-      },
-      {
-        "example": "Using graphic language at work has been long __frowned upon__.",
-        "solution": "metonymy",
-        "explanation": "we __relate__ a certain face gesture to the usual meaning of that gesture",
-        "model": "gesture for meaning"
-      }
-    ],
-    [
-      {
-        "example": "Don't __be__ that way.",
-        "solution": "metonymy",
-        "explanation": "we __relate__ a person to that person's behaviour",
-        "model": "person for behaviour"
-      },
-      {
-        "example": "The question is where the __line should be drawn__.",
-        "solution": "metaphor",
-        "explanation": "we __compare__ a graphical line, often used as delimiter, to the limit in general",
-        "model": "visual is semantic"
-      },
-      {
-        "example": "There is no reason to use such __harsh__ words.",
-        "solution": "metaphor",
-        "explanation": "we __compare__ harshness of certain words to physical harshness",
-        "model": "language is physical world"
-      },
-      {
-        "example": "Our guest is the principal __viola__ in the Concertgebouworkest.",
-        "solution": "metonymy",
-        "explanation": "we __relate__ an instrumentalist to the instrument he plays",
-        "model": "worker for tool"
-      },
-      {
-        "example": "Many developers write __ugly__ code.",
-        "solution": "metaphor",
-        "explanation": "we __compare__ quality, readability or maintainability of code with beauty",
-        "model": "quality is beauty"
-      }
-    ],
-    [
-      {
-        "example": "<head>",
-        "solution": "metaphor",
-        "explanation": "we __compare__ the HTML <head> element with the living being's head in terms of its relative position",
-        "model": "html is living being"
-      },
-      {
-        "example": "<article>",
-        "solution": "metonymy",
-        "explanation": "we __relate__ the HTML <article> element with what it contains",
-        "model": "container for content"
-      },
-      {
-        "example": "<main>",
-        "solution": "metonymy",
-        "explanation": "we __relate__ the HTML <main> element with its semantical position in the document's hierarchy",
-        "model": "element for role"
-      },
-      {
-        "example": "<label>",
-        "solution": "metaphor",
-        "explanation": "we __compare__ the HTML <label> element with the physical label in terms of function",
-        "model": "html is physical world"
-      },
-      {
-        "example": "<aside>",
-        "solution": "metonymy",
-        "explanation": "we __relate__ the HTML <aside> element with its position on screen",
-        "model": "element for position"
-      }
-    ],
-    [
-      {
-        "example": "<input type=\"__radio__\">",
-        "solution": "metaphor",
-        "explanation": "we __compare__ the value of an attribute with buttons on an actual radio receiver in terms that selecting one deselects others",
-        "model": "html form is radio device"
-      },
-      {
-        "example": "<input type=\"__reset__\">",
-        "solution": "metonymy",
-        "explanation": "we __relate__ the value of an attribute to what this <input> element does",
-        "model": "attribute for purpose"
-      },
-      {
-        "example": "<video src=\"video.mp4\" __poster__=\"image.jpg\">",
-        "solution": "metaphor",
-        "explanation": "we __compare__ the name of an attribute to a physical poster in terms of appearance",
-        "model": "html is physical world"
-      },
-      {
-        "example": "<label __for__=\"username\">",
-        "solution": "metonymy",
-        "explanation": "we __relate__ the name of an attribute to the purpose of connecting the label to its corresponding form element",
-        "model": "attribute name for purpose"
-      }
-    ],
-    [
-      {
-        "example": "display: __flex__",
-        "solution": "metaphor",
-        "explanation": "we __compare__ the flexibility of items within flexbox to the flexibility in nature",
-        "model": "css is physical world"
-      },
-      {
-        "example": "background-size: __contain__",
-        "solution": "metonymy",
-        "explanation": "we __relate__ the value to the purpose, e.g. it should be contained in the parent element",
-        "model": "value for purpose"
-      },
-      {
-        "example": "__box__-sizing: border-box;",
-        "solution": "metaphor",
-        "explanation": "we __compare__ an HTML element to the physical box in terms that both are in rectangular shape",
-        "model": "html is physical world"
-      },
-      {
-        "example": "font-size: __inherit__",
-        "solution": "metaphor",
-        "explanation": "we __compare__ inheriting a property from parent element in CSS to the way children in the real world inherit properties from their parents",
-        "model": "css is physical world"
-      },
-      {
-        "example": "cursor: __wait__",
-        "solution": "metonymy",
-        "explanation": "we __relate__ the value to the message, meaning that cursor shape should suggest user should wait until current action is done",
-        "model": "value for purpose"
-      }
-    ],
-    [
-      {
-        "example": "const getPosts = new __Promise__((resolve, reject) => { ... })",
-        "solution": "metaphor",
-        "explanation": "we __compare__ promise in JS with promise in real life in terms that promise can be either fulfilled or not",
-        "model": "API is real life"
-      },
-      {
-        "example": ".__then__(() => { ... }).catch(() => { ... })",
-        "solution": "metonymy",
-        "explanation": "we __relate__ the name of code block to the time context in which it will be executed",
-        "model": "name for time context"
-      },
-      {
-        "example": "new Promise((resolve, reject) => { ... }).then(() => { ... }).__catch__(() => { ... })",
-        "solution": "metaphor",
-        "explanation": "we __compare__ catching an API error to catching a physical object in terms of purpose, to prevent it from falling and breaking",
-        "model": "API is real life"
-      },
-      {
-        "example": "event.__bubbles__",
-        "solution": "metaphor",
-        "explanation": "we __compare__ bubbling in JS to the movement of physical bubbles, which move upwards, like event bubbles up the DOM tree",
-        "model": "DOM is real world"
-      },
-      {
-        "example": "const { isThinking, isConnected } = __this__.props",
-        "solution": "metonymy",
-        "explanation": "using a pronoun instead of noun is by default metonymical, and we __relate__ 'this' for the container class",
-        "model": "pronoun for noun"
-      }
-    ],
-    [
-      {
-        "example": "__const { isThinking, isConnected } = anything__",
-        "solution": "metonymy",
-        "explanation": "destructuring itself is a metonymical concept. We __relate__ object properties to parent object",
-        "model": "pronoun for noun"
-      }
-    ]
+    {
+      "title": "Find uses of metaphor and metonymy in words and expressions written in bold",
+      "questions": [
+        {
+          "example": "Whatever happens, just stay __cool__.",
+          "solution": "metaphor",
+          "explanation": "we __compare__ coolness with calmness",
+          "model": "temper is temperature"
+        },
+        {
+          "example": "Check with __payroll__ why you weren't reimbursed for commuting.",
+          "solution": "metonymy",
+          "explanation": "we __relate__ a department in a company to what this department does",
+          "model": "performer for action"
+        },
+        {
+          "example": "This movie is a real __junk__.",
+          "solution": "metaphor",
+          "explanation": "we __compare__ the movie to domestic junk in terms of worthiness",
+          "model": "creation is every-day life"
+        },
+        {
+          "example": "Using __graphic__ language at work has been long frowned upon.",
+          "solution": "metonymy",
+          "explanation": "we __relate__ visual explicitness to verbal one",
+          "model": "visual for verbal"
+        },
+        {
+          "example": "Using graphic language at work has been long __frowned upon__.",
+          "solution": "metonymy",
+          "explanation": "we __relate__ a certain face gesture to the usual meaning of that gesture",
+          "model": "gesture for meaning"
+        }
+      ]
+    },
+    {
+      "title": "Find uses of metaphor and metonymy in words and expressions written in bold",
+      "questions": [
+        {
+          "example": "Don't __be__ that way.",
+          "solution": "metonymy",
+          "explanation": "we __relate__ a person to that person's behaviour",
+          "model": "person for behaviour"
+        },
+        {
+          "example": "The question is where the __line should be drawn__.",
+          "solution": "metaphor",
+          "explanation": "we __compare__ a graphical line, often used as delimiter, to the limit in general",
+          "model": "visual is semantic"
+        },
+        {
+          "example": "There is no reason to use such __harsh__ words.",
+          "solution": "metaphor",
+          "explanation": "we __compare__ harshness of certain words to physical harshness",
+          "model": "language is physical world"
+        },
+        {
+          "example": "Our guest is the principal __viola__ in the Concertgebouworkest.",
+          "solution": "metonymy",
+          "explanation": "we __relate__ an instrumentalist to the instrument he plays",
+          "model": "worker for tool"
+        },
+        {
+          "example": "Many developers write __ugly__ code.",
+          "solution": "metaphor",
+          "explanation": "we __compare__ quality, readability or maintainability of code with beauty",
+          "model": "quality is beauty"
+        }
+      ]
+    },
+    {
+      "title": "Find uses of metaphor and metonymy in words and expressions written in bold",
+      "questions": [
+        {
+          "example": "<head>",
+          "solution": "metaphor",
+          "explanation": "we __compare__ the HTML <head> element with the living being's head in terms of its relative position",
+          "model": "html is living being"
+        },
+        {
+          "example": "<article>",
+          "solution": "metonymy",
+          "explanation": "we __relate__ the HTML <article> element with what it contains",
+          "model": "container for content"
+        },
+        {
+          "example": "<main>",
+          "solution": "metonymy",
+          "explanation": "we __relate__ the HTML <main> element with its semantical position in the document's hierarchy",
+          "model": "element for role"
+        },
+        {
+          "example": "<label>",
+          "solution": "metaphor",
+          "explanation": "we __compare__ the HTML <label> element with the physical label in terms of function",
+          "model": "html is physical world"
+        },
+        {
+          "example": "<aside>",
+          "solution": "metonymy",
+          "explanation": "we __relate__ the HTML <aside> element with its position on screen",
+          "model": "element for position"
+        }
+      ]
+    },
+    {
+      "title": "Find uses of metaphor and metonymy in words and expressions written in bold",
+      "questions": [
+        {
+          "example": "<input type=\"__radio__\">",
+          "solution": "metaphor",
+          "explanation": "we __compare__ the value of an attribute with buttons on an actual radio receiver in terms that selecting one deselects others",
+          "model": "html form is radio device"
+        },
+        {
+          "example": "<input type=\"__reset__\">",
+          "solution": "metonymy",
+          "explanation": "we __relate__ the value of an attribute to what this <input> element does",
+          "model": "attribute for purpose"
+        },
+        {
+          "example": "<video src=\"video.mp4\" __poster__=\"image.jpg\">",
+          "solution": "metaphor",
+          "explanation": "we __compare__ the name of an attribute to a physical poster in terms of appearance",
+          "model": "html is physical world"
+        },
+        {
+          "example": "<label __for__=\"username\">",
+          "solution": "metonymy",
+          "explanation": "we __relate__ the name of an attribute to the purpose of connecting the label to its corresponding form element",
+          "model": "attribute name for purpose"
+        }
+      ]
+    },
+    {
+      "title": "Find uses of metaphor and metonymy in words and expressions written in bold",
+      "questions": [
+        {
+          "example": "display: __flex__",
+          "solution": "metaphor",
+          "explanation": "we __compare__ the flexibility of items within flexbox to the flexibility in nature",
+          "model": "css is physical world"
+        },
+        {
+          "example": "background-size: __contain__",
+          "solution": "metonymy",
+          "explanation": "we __relate__ the value to the purpose, e.g. it should be contained in the parent element",
+          "model": "value for purpose"
+        },
+        {
+          "example": "__box__-sizing: border-box;",
+          "solution": "metaphor",
+          "explanation": "we __compare__ an HTML element to the physical box in terms that both are in rectangular shape",
+          "model": "html is physical world"
+        },
+        {
+          "example": "font-size: __inherit__",
+          "solution": "metaphor",
+          "explanation": "we __compare__ inheriting a property from parent element in CSS to the way children in the real world inherit properties from their parents",
+          "model": "css is physical world"
+        },
+        {
+          "example": "cursor: __wait__",
+          "solution": "metonymy",
+          "explanation": "we __relate__ the value to the message, meaning that cursor shape should suggest user should wait until current action is done",
+          "model": "value for purpose"
+        }
+      ]
+    },
+    {
+      "title": "Find uses of metaphor and metonymy in words and expressions written in bold",
+      "questions": [
+        {
+          "example": "const getPosts = new __Promise__((resolve, reject) => { ... })",
+          "solution": "metaphor",
+          "explanation": "we __compare__ promise in JS with promise in real life in terms that promise can be either fulfilled or not",
+          "model": "API is real life"
+        },
+        {
+          "example": ".__then__(() => { ... }).catch(() => { ... })",
+          "solution": "metonymy",
+          "explanation": "we __relate__ the name of code block to the time context in which it will be executed",
+          "model": "name for time context"
+        },
+        {
+          "example": "new Promise((resolve, reject) => { ... }).then(() => { ... }).__catch__(() => { ... })",
+          "solution": "metaphor",
+          "explanation": "we __compare__ catching an API error to catching a physical object in terms of purpose, to prevent it from falling and breaking",
+          "model": "API is real life"
+        },
+        {
+          "example": "event.__bubbles__",
+          "solution": "metaphor",
+          "explanation": "we __compare__ bubbling in JS to the movement of physical bubbles, which move upwards, like event bubbles up the DOM tree",
+          "model": "DOM is real world"
+        },
+        {
+          "example": "const { isThinking, isConnected } = __this__.props",
+          "solution": "metonymy",
+          "explanation": "using a pronoun instead of noun is by default metonymical, and we __relate__ 'this' for the container class",
+          "model": "pronoun for noun"
+        }
+      ]
+    },
+    {
+      "title": "Find uses of metaphor and metonymy in words and expressions written in bold",
+      "questions": [
+        {
+          "example": "__const { isThinking, isConnected } = anything__",
+          "solution": "metonymy",
+          "explanation": "destructuring itself is a metonymical concept. We __relate__ object properties to parent object",
+          "model": "pronoun for noun"
+        }
+      ]
+    }
   ]
 }

@@ -13,6 +13,12 @@
   @media(min-width: $col-m) {
     font-size: $font-size-medium;
   }
+  &__subtitle {
+    line-height: 1.5;
+    font-size: $font-size-base;
+    margin-bottom: 0;
+    text-align: center;
+  }
   &__row {
     display: grid;
     grid-gap: $gutter;

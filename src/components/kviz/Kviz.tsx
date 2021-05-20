@@ -5,7 +5,8 @@ import styles from './kviz.module.scss'
 
 const Kviz = () => {
   const [level, setLevel] = useState(0)
-  const [content, setContent] = useState([])
+  const [title, setTitle] = useState('')
+  const [questions, setQuestions] = useState([])
   const [answersCount, setAnswersCount] = useState(0)
   const [currentQuestion, setCurrentQuestion] = useState(0)
 
@@ -16,8 +17,9 @@ const Kviz = () => {
   }
 
   useEffect(() => {
-    setContent(kviz[level])
-  }, [setLevel, setContent])
+    setTitle(kviz[level].title)
+    setQuestions(kviz[level].questions)
+  }, [setLevel, setTitle, setQuestions])
 
   function scrollToBottom() {
     const kvizElement = kvizRef.current
@@ -30,26 +32,25 @@ const Kviz = () => {
     selectedOption: string
   ) {
     const outcome = expectedOption === selectedOption
-    const matchedRow = content.findIndex(
+    const matchedRow = questions.findIndex(
       (row) => row.example === selectedExample
     )
-    const nextContent = content.slice()
+    const nextContent = questions.slice()
     nextContent[matchedRow].status = 'selected'
     nextContent[matchedRow].outcome = outcome
-    setContent(nextContent)
+    setQuestions(nextContent)
     setTimeout(() => {
       setAnswersCount(answersCount + 1)
       setCurrentQuestion(currentQuestion + 1)
-      // if (currentQuestion < content.length - 1) {
       scrollToBottom()
-      // }
     }, settings.questionTimeout)
   }
 
   function handleContinueClick() {
     const nextLevel = level + 1
     setLevel(nextLevel)
-    setContent(kviz[nextLevel])
+    setTitle(kviz[nextLevel].title)
+    setQuestions(kviz[nextLevel].questions)
     setAnswersCount(0)
     setCurrentQuestion(0)
   }
@@ -78,11 +79,10 @@ const Kviz = () => {
   const options = ['metaphor', 'metonymy']
   return (
     <div className={styles.kviz}>
-      <p className={styles.levelTitle}>
-        Find uses of metaphor and metonymy in words and expressions written in
-        bold
+      <p className={styles.kviz__subtitle}>
+        {level + 1}. {title}
       </p>
-      {content.map((row, rowIndex) => {
+      {questions.map((row, rowIndex) => {
         if (rowIndex > currentQuestion) {
           return null
         }
@@ -148,7 +148,7 @@ const Kviz = () => {
           </div>
         )
       })}
-      {answersCount === content.length && (
+      {answersCount === questions.length && (
         <div className={styles.kviz__footer}>
           {level < kviz.length - 1 ? (
             <button
