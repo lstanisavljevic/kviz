@@ -10,13 +10,14 @@
   width: 100%;
   max-width: $col-xl;
   margin-top: $gutter-big;
+  margin-bottom: $gutter-big;
   @media(min-width: $col-m) {
     font-size: $font-size-medium;
   }
   &__subtitle {
     line-height: 1.5;
     font-size: $font-size-base;
-    margin-bottom: 0;
+    margin: 0;
     text-align: center;
   }
   &__row {
