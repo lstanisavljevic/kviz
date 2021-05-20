@@ -1,3 +1,11 @@
+# Kviz
+
+This is a little quiz to support my guild presentation about similarity vs. contiguity in linguistics.
+
+It's based on Tim's boilerplate based on Mirabeau's boilerplate with NextJS, so it's well based.
+
+---
+
 # Next boilerplate
 
 This is based on the Mirabeau Front-end boilerplate but now React based (using NextJS) and stacked with new functionalities.
