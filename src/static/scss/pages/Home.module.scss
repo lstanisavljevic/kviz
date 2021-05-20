@@ -62,6 +62,10 @@
   align-items: center;
   text-indent: -0.46rem;
   text-shadow: -1px 0 0 $color-black;
+  &:hover {
+    text-shadow: 1px 0 0 $color-black;
+    user-select: none;
+  }
 }
 
 .title,
@@ -73,6 +77,7 @@
   line-height: 1.5;
   font-size: $font-size-base;
   margin-bottom: 0;
+  width: 20rem;
 }
 
 .code {
