@@ -78,6 +78,10 @@ const Kviz = () => {
   const options = ['metaphor', 'metonymy']
   return (
     <div className={styles.kviz}>
+      <p className={styles.levelTitle}>
+        Find uses of metaphor and metonymy in words and expressions written in
+        bold
+      </p>
       {content.map((row, rowIndex) => {
         if (rowIndex > currentQuestion) {
           return null

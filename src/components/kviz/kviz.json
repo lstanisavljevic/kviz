@@ -156,13 +156,13 @@
     ],
     [
       {
-        "example": "new __Promise__((resolve, reject) => { ... }).then(() => { ... }).catch(() => { ... })",
+        "example": "const getPosts = new __Promise__((resolve, reject) => { ... })",
         "solution": "metaphor",
         "explanation": "we __compare__ promise in JS with promise in real life in terms that promise can be either fulfilled or not",
         "model": "API is real life"
       },
       {
-        "example": "new Promise((resolve, reject) => { ... }).__then__(() => { ... }).catch(() => { ... })",
+        "example": ".__then__(() => { ... }).catch(() => { ... })",
         "solution": "metonymy",
         "explanation": "we __relate__ the name of code block to the time context in which it will be executed",
         "model": "name for time context"
@@ -180,13 +180,15 @@
         "model": "DOM is real world"
       },
       {
-        "example": "const { isThinking, isCarLoading } = __this__.props",
+        "example": "const { isThinking, isConnected } = __this__.props",
         "solution": "metonymy",
         "explanation": "using a pronoun instead of noun is by default metonymical, and we __relate__ 'this' for the container class",
         "model": "pronoun for noun"
-      },
+      }
+    ],
+    [
       {
-        "example": "__const { isThinking, isCarLoading } = anything__",
+        "example": "__const { isThinking, isConnected } = anything__",
         "solution": "metonymy",
         "explanation": "destructuring itself is a metonymical concept. We __relate__ object properties to parent object",
         "model": "pronoun for noun"

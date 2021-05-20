@@ -12,10 +12,6 @@ export default function Home() {
       </Head>
 
       <h1 className={styles.title}>A little quiz</h1>
-      <p className={styles.explanation}>
-        Find uses of metaphor and metonymy in words and expressions written in
-        bold
-      </p>
       <Kviz />
     </div>
   )
