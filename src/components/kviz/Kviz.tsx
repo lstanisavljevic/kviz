@@ -56,17 +56,6 @@ const Kviz = () => {
     setCurrentQuestion(0)
   }
 
-  function processHtml(input: string) {
-    const inputArray = input.split('__')
-    return inputArray.map((item, index) => {
-      const key = `${item}${index}`
-      if (index > 0 && index < inputArray.length - 1) {
-        return <strong key={key}>{item}</strong>
-      }
-      return <span key={key}>{item}</span>
-    })
-  }
-
   interface Row {
     outcome: boolean
     solution: string
@@ -90,9 +79,10 @@ const Kviz = () => {
         const { example, solution, explanation, model, status, outcome } = row
         const statusClassName = status ? 'selected' : 'unselected'
         const explanationRendered = (
-          <>
-            <span>{processExplanation(row)}</span> {processHtml(explanation)}
-          </>
+          <div>
+            <span>{processExplanation(row)}</span>
+            <span dangerouslySetInnerHTML={{ __html: explanation }} />
+          </div>
         )
         return (
           <div
