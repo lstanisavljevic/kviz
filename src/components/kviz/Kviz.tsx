@@ -89,7 +89,6 @@ const Kviz = () => {
         }
         const { example, solution, explanation, model, status, outcome } = row
         const statusClassName = status ? 'selected' : 'unselected'
-        const exampleRendered = processHtml(example)
         const explanationRendered = (
           <>
             <span>{processExplanation(row)}</span> {processHtml(explanation)}
@@ -107,18 +106,20 @@ const Kviz = () => {
                 styles[`kviz__col--${statusClassName}`]
               }`}
             >
-              {exampleRendered}
-              {status && (
-                <div className={`${styles.kviz__explanation}`}>
-                  {explanationRendered}
-                  <div className={`${styles.kviz__model}`}>
-                    It is based on conceptual {solution}:{' '}
-                    <span className={`${styles.kviz__model__name}`}>
-                      {model}
-                    </span>
+              <div dangerouslySetInnerHTML={{ __html: example }} />
+              <div>
+                {status && (
+                  <div className={`${styles.kviz__explanation}`}>
+                    {explanationRendered}
+                    <div className={`${styles.kviz__model}`}>
+                      It is based on conceptual {solution}:{' '}
+                      <span className={`${styles.kviz__model__name}`}>
+                        {model}
+                      </span>
+                    </div>
                   </div>
-                </div>
-              )}
+                )}
+              </div>
             </div>
             {options.map((option, optionIndex) => (
               <div
