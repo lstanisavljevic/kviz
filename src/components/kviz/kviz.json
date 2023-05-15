@@ -32,6 +32,53 @@
           "solution": "metaphor",
           "explanation": "we __compare__ quality, readability or maintainability of code with beauty",
           "model": "quality is beauty"
+        },
+        {
+          "example": "He is a firecracker, ready to explode",
+          "solution": "metaphor",
+          "explanation": "we __compare__ someone's unpredictable temper with an unpredictable device",
+          "model": "person is device"
+        }
+      ]
+    },
+    {
+      "title": "Poetry",
+      "questions": [
+        {
+          "example": "Friends, Romans, countrymen, lend me your __ears__. (Shakespeare)",
+          "solution": "metonymy",
+          "explanation": "Shakespeare __relates__ an organ to its function",
+          "model": "organ for function"
+        },
+        {
+          "example": "Life's but a __walking shadow__ (Shakespeare)",
+          "solution": "metaphor",
+          "explanation": "Shakespeare __compares__ life to a shadow based, stressing the nature of existence",
+          "model": "human is world"
+        },
+        {
+          "example": "His __flashing__ eyes, his __floating__ hair! (Coleridge)",
+          "solution": "metaphor",
+          "explanation": "Coleridge __compares__ the appearance of Death using words that usually describe nature rather than living being",
+          "model": "being is nature"
+        },
+        {
+          "example": "The yellow fog that __rubs its back__ upon the window-panes",
+          "solution": "metaphor",
+          "explanation": "T. S. Eliot __compares__ the behaviour of the fog to the behaviour of a cat, to stress its capriciousness",
+          "model": "fog is cat"
+        },
+        {
+          "example": "__Gray__, dear friend, is all theory, and __green__ is life's golden tree.",
+          "solution": "metonymy",
+          "explanation": "Goethe __relates__ gray and green colour to their usual symbolic representations",
+          "model": "colour is abstract world"
+        },
+        {
+          "example": "The secret to my poems is that they __rhyme__ with eternity",
+          "solution": "metaphor",
+          "explanation": "Miłosz __compares__ someone's unpredictable temper with an unpredictable device",
+          "model": "person is device"
         }
       ]
     },
