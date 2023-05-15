@@ -4,81 +4,34 @@
       "title": "Colloquial style",
       "questions": [
         {
-          "example": "Whatever happens, just stay __cool__.",
+          "example": "Whatever happens, just stay <b>cool</b>.",
           "solution": "metaphor",
-          "explanation": "we __compare__ coolness with calmness",
+          "explanation": "we <b>compare</b> coolness with calmness",
           "model": "temper is temperature"
         },
         {
-          "example": "Check with __payroll__ why you weren't reimbursed for commuting.",
+          "example": "Check with <b>payroll</b> why you weren't reimbursed for commuting.",
           "solution": "metonymy",
-          "explanation": "we __relate__ a department in a company to what this department does",
+          "explanation": "we <b>relate</b> a department in a company to what this department does",
           "model": "performer for action"
         },
         {
-          "example": "This movie is a real __junk__.",
+          "example": "This movie is a real <b>junk</b>.",
           "solution": "metaphor",
-          "explanation": "we __compare__ the movie to domestic junk in terms of worthiness",
+          "explanation": "we <b>compare</b> the movie to domestic junk in terms of worthiness",
           "model": "creation is every-day life"
         },
         {
-          "example": "Don't __be__ that way.",
+          "example": "Don't <b>be</b> that way.",
           "solution": "metonymy",
-          "explanation": "we __relate__ a person to that person's behaviour",
+          "explanation": "we <b>relate</b> a person to that person's behaviour",
           "model": "person for behaviour"
         },
         {
-          "example": "Many developers write __ugly__ code.",
+          "example": "Many developers write <b>ugly</b> code.",
           "solution": "metaphor",
-          "explanation": "we __compare__ quality, readability or maintainability of code with beauty",
+          "explanation": "we <b>compare</b> quality, readability or maintainability of code with beauty",
           "model": "quality is beauty"
-        },
-        {
-          "example": "He is a firecracker, ready to explode",
-          "solution": "metaphor",
-          "explanation": "we __compare__ someone's unpredictable temper with an unpredictable device",
-          "model": "person is device"
-        }
-      ]
-    },
-    {
-      "title": "Poetry",
-      "questions": [
-        {
-          "example": "Friends, Romans, countrymen, lend me your __ears__. (Shakespeare)",
-          "solution": "metonymy",
-          "explanation": "Shakespeare __relates__ an organ to its function",
-          "model": "organ for function"
-        },
-        {
-          "example": "Life's but a __walking shadow__ (Shakespeare)",
-          "solution": "metaphor",
-          "explanation": "Shakespeare __compares__ life to a shadow based, stressing the nature of existence",
-          "model": "human is world"
-        },
-        {
-          "example": "His __flashing__ eyes, his __floating__ hair! (Coleridge)",
-          "solution": "metaphor",
-          "explanation": "Coleridge __compares__ the appearance of Death using words that usually describe nature rather than living being",
-          "model": "being is nature"
-        },
-        {
-          "example": "The yellow fog that __rubs its back__ upon the window-panes",
-          "solution": "metaphor",
-          "explanation": "T. S. Eliot __compares__ the behaviour of the fog to the behaviour of a cat, to stress its capriciousness",
-          "model": "fog is cat"
-        },
-        {
-          "example": "__Gray__, dear friend, is all theory, and __green__ is life's golden tree.",
-          "solution": "metonymy",
-          "explanation": "Goethe __relates__ gray and green colour to their usual symbolic representations",
-          "model": "colour is abstract world"
-        },
-        {
-          "example": "The secret to my poems is that they __rhyme__ with eternity",
-          "solution": "metaphor",
-          "explanation": "Miłosz __compares__ someone's unpredictable temper with an unpredictable device",
-          "model": "person is device"
         }
       ]
     },
@@ -86,33 +39,33 @@
       "title": "Administrative or journalist style",
       "questions": [
         {
-          "example": "Using __graphic__ language at work has been long frowned upon.",
+          "example": "Using <b>graphic</b> language at work has been long frowned upon.",
           "solution": "metonymy",
-          "explanation": "we __relate__ visual explicitness to verbal one",
+          "explanation": "we <b>relate</b> visual explicitness to verbal one",
           "model": "visual for verbal"
         },
         {
-          "example": "Using graphic language at work has been long __frowned upon__.",
+          "example": "Using graphic language at work has been long <b>frowned upon</b>.",
           "solution": "metonymy",
-          "explanation": "we __relate__ a certain face gesture to the usual meaning of that gesture",
+          "explanation": "we <b>relate</b> a certain face gesture to the usual meaning of that gesture",
           "model": "gesture for meaning"
         },
         {
-          "example": "The question is where the __line should be drawn__.",
+          "example": "The question is where the <b>line should be drawn</b>.",
           "solution": "metaphor",
-          "explanation": "we __compare__ a graphical line, often used as delimiter, to the limit in general",
+          "explanation": "we <b>compare</b> a graphical line, often used as delimiter, to the limit in general",
           "model": "visual is semantic"
         },
         {
-          "example": "There is no reason to use such __harsh__ words.",
+          "example": "There is no reason to use such <b>harsh</b> words.",
           "solution": "metaphor",
-          "explanation": "we __compare__ harshness of certain words to physical harshness",
+          "explanation": "we <b>compare</b> harshness of certain words to physical harshness",
           "model": "language is physical world"
         },
         {
-          "example": "Our guest is the principal __viola__ in the Concertgebouworkest.",
+          "example": "Our guest is the principal <b>viola</b> in the Concertgebouworkest.",
           "solution": "metonymy",
-          "explanation": "we __relate__ an instrumentalist to the instrument he plays",
+          "explanation": "we <b>relate</b> an instrumentalist to the instrument he plays",
           "model": "worker for tool"
         }
       ]
@@ -123,31 +76,31 @@
         {
           "example": "<head>",
           "solution": "metaphor",
-          "explanation": "we __compare__ the HTML <head> element with the living being's head in terms of its relative position",
+          "explanation": "we <b>compare</b> the HTML <head> element with the living being's head in terms of its relative position",
           "model": "html is living being"
         },
         {
           "example": "<article>",
           "solution": "metonymy",
-          "explanation": "we __relate__ the HTML <article> element with what it contains",
+          "explanation": "we <b>relate</b> the HTML <article> element with what it contains",
           "model": "container for content"
         },
         {
           "example": "<main>",
           "solution": "metonymy",
-          "explanation": "we __relate__ the HTML <main> element with its semantical position in the document's hierarchy",
+          "explanation": "we <b>relate</b> the HTML <main> element with its semantical position in the document's hierarchy",
           "model": "element for role"
         },
         {
           "example": "<label>",
           "solution": "metaphor",
-          "explanation": "we __compare__ the HTML <label> element with the physical label in terms of function",
+          "explanation": "we <b>compare</b> the HTML <label> element with the physical label in terms of function",
           "model": "html is physical world"
         },
         {
           "example": "<aside>",
           "solution": "metonymy",
-          "explanation": "we __relate__ the HTML <aside> element with its position on screen",
+          "explanation": "we <b>relate</b> the HTML <aside> element with its position on screen",
           "model": "element for position"
         }
       ]
@@ -156,27 +109,27 @@
       "title": "HTML attributes",
       "questions": [
         {
-          "example": "<input type=\"__radio__\">",
+          "example": "<input type=\"<b>radio</b>\">",
           "solution": "metaphor",
-          "explanation": "we __compare__ the value of an attribute with buttons on an actual radio receiver in terms that selecting one deselects others",
+          "explanation": "we <b>compare</b> the value of an attribute with buttons on an actual radio receiver in terms that selecting one deselects others",
           "model": "html form is radio device"
         },
         {
-          "example": "<input type=\"__reset__\">",
+          "example": "<input type=\"<b>reset</b>\">",
           "solution": "metonymy",
-          "explanation": "we __relate__ the value of an attribute to what this <input> element does",
+          "explanation": "we <b>relate</b> the value of an attribute to what this <input> element does",
           "model": "attribute for purpose"
         },
         {
-          "example": "<video src=\"video.mp4\" __poster__=\"image.jpg\">",
+          "example": "<video src=\"video.mp4\" <b>poster</b>=\"image.jpg\">",
           "solution": "metaphor",
-          "explanation": "we __compare__ the name of an attribute to a physical poster in terms of appearance",
+          "explanation": "we <b>compare</b> the name of an attribute to a physical poster in terms of appearance",
           "model": "html is physical world"
         },
         {
-          "example": "<label __for__=\"username\">",
+          "example": "<label <b>for</b>=\"username\">",
           "solution": "metonymy",
-          "explanation": "we __relate__ the name of an attribute to the purpose of connecting the label to its corresponding form element",
+          "explanation": "we <b>relate</b> the name of an attribute to the purpose of connecting the label to its corresponding form element",
           "model": "attribute name for purpose"
         }
       ]
@@ -185,33 +138,33 @@
       "title": "CSS attributes",
       "questions": [
         {
-          "example": "display: __flex__",
+          "example": "display: <b>flex</b>",
           "solution": "metaphor",
-          "explanation": "we __compare__ the flexibility of items within flexbox to the flexibility in nature",
+          "explanation": "we <b>compare</b> the flexibility of items within flexbox to the flexibility in nature",
           "model": "css is physical world"
         },
         {
-          "example": "background-size: __contain__",
+          "example": "background-size: <b>contain</b>",
           "solution": "metonymy",
-          "explanation": "we __relate__ the value to the purpose, e.g. it should be contained in the parent element",
+          "explanation": "we <b>relate</b> the value to the purpose, e.g. it should be contained in the parent element",
           "model": "value for purpose"
         },
         {
-          "example": "__box__-sizing: border-box;",
+          "example": "<b>box</b>-sizing: border-box;",
           "solution": "metaphor",
-          "explanation": "we __compare__ an HTML element to the physical box in terms that both are in rectangular shape",
+          "explanation": "we <b>compare</b> an HTML element to the physical box in terms that both are in rectangular shape",
           "model": "html is physical world"
         },
         {
-          "example": "font-size: __inherit__",
+          "example": "font-size: <b>inherit</b>",
           "solution": "metaphor",
-          "explanation": "we __compare__ inheriting a property from parent element in CSS to the way children in the real world inherit properties from their parents",
+          "explanation": "we <b>compare</b> inheriting a property from parent element in CSS to the way children in the real world inherit properties from their parents",
           "model": "css is physical world"
         },
         {
-          "example": "cursor: __wait__",
+          "example": "cursor: <b>wait</b>",
           "solution": "metonymy",
-          "explanation": "we __relate__ the value to the message, meaning that cursor shape should suggest user should wait until current action is done",
+          "explanation": "we <b>relate</b> the value to the message, meaning that cursor shape should suggest user should wait until current action is done",
           "model": "value for purpose"
         }
       ]
@@ -220,33 +173,33 @@
       "title": "JS keywords",
       "questions": [
         {
-          "example": "const getPosts = new __Promise__((resolve, reject) => { ... })",
+          "example": "const getPosts = new <b>Promise</b>((resolve, reject) => { ... })",
           "solution": "metaphor",
-          "explanation": "we __compare__ promise in JS with promise in real life in terms that promise can be either fulfilled or not",
+          "explanation": "we <b>compare</b> promise in JS with promise in real life in terms that promise can be either fulfilled or not",
           "model": "API is real life"
         },
         {
-          "example": ".__then__(() => { ... }).catch(() => { ... })",
+          "example": ".<b>then</b>(() => { ... }).catch(() => { ... })",
           "solution": "metonymy",
-          "explanation": "we __relate__ the name of code block to the time context in which it will be executed",
+          "explanation": "we <b>relate</b> the name of code block to the time context in which it will be executed",
           "model": "name for time context"
         },
         {
-          "example": "__catch__(() => { ... })",
+          "example": "<b>catch</b>(() => { ... })",
           "solution": "metaphor",
-          "explanation": "we __compare__ catching an API error to catching a physical object in terms of purpose, to prevent it from falling and breaking",
+          "explanation": "we <b>compare</b> catching an API error to catching a physical object in terms of purpose, to prevent it from falling and breaking",
           "model": "API is real life"
         },
         {
-          "example": "event.__bubbles__",
+          "example": "event.<b>bubbles</b>",
           "solution": "metaphor",
-          "explanation": "we __compare__ bubbling in JS to the movement of physical bubbles, which move upwards, like event bubbles up the DOM tree",
+          "explanation": "we <b>compare</b> bubbling in JS to the movement of physical bubbles, which move upwards, like event bubbles up the DOM tree",
           "model": "DOM is real world"
         },
         {
-          "example": "const { isThinking, isConnected } = __this__.props",
+          "example": "const { isThinking, isConnected } = <b>this</b>.props",
           "solution": "metonymy",
-          "explanation": "using a pronoun instead of noun is by default metonymical, and we __relate__ 'this' for the container class",
+          "explanation": "using a pronoun instead of noun is by default metonymical, and we <b>relate</b> 'this' for the container class",
           "model": "pronoun for noun"
         }
       ]
@@ -257,25 +210,25 @@
         {
           "example": "const { someProp, otherProp } = whatever",
           "solution": "metonymy",
-          "explanation": "destructuring is a metonymical concept. We __relate__ object properties to parent object",
+          "explanation": "destructuring is a metonymical concept. We <b>relate</b> object properties to parent object",
           "model": "part for whole"
         },
         {
           "example": "someArray.forEach((item, index) => { ... })",
           "solution": "metonymy",
-          "explanation": "any iteration in any programming language is metonymical. We __relate__ currently iterated item to parent",
+          "explanation": "any iteration in any programming language is metonymical. We <b>relate</b> currently iterated item to parent",
           "model": "part for whole"
         },
         {
           "example": "function fct(a) { if (a === 1) { return a } return a * fct(a - 1) }",
           "solution": "metonymy",
-          "explanation": "recursion is probably the most metonymical of all, because we __relate__ recursive function to nothing else but itself",
+          "explanation": "recursion is probably the most metonymical of all, because we <b>relate</b> recursive function to nothing else but itself",
           "model": "part for whole"
         },
         {
           "example": "return (b) => { return (c) => { return a + b * c }}",
           "solution": "metonymy",
-          "explanation": "currying is typically metonymical. We __relate__ every further function to the outcome of the previous in the chain",
+          "explanation": "currying is typically metonymical. We <b>relate</b> every further function to the outcome of the previous in the chain",
           "model": "successor for predecessor"
         }
       ]
