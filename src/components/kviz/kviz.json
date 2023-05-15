@@ -4,34 +4,81 @@
       "title": "Colloquial style",
       "questions": [
         {
-          "example": "Whatever happens, just stay <b>cool</b>.",
+          "example": "Whatever happens, just stay <strong>cool</strong>.",
           "solution": "metaphor",
-          "explanation": "we <b>compare</b> coolness with calmness",
+          "explanation": "we <strong>compare</strong> coolness with calmness",
           "model": "temper is temperature"
         },
         {
-          "example": "Check with <b>payroll</b> why you weren't reimbursed for commuting.",
+          "example": "Check with <strong>payroll</strong> why you weren't reimbursed for commuting.",
           "solution": "metonymy",
-          "explanation": "we <b>relate</b> a department in a company to what this department does",
+          "explanation": "we <strong>relate</strong> a department in a company to what this department does",
           "model": "performer for action"
         },
         {
-          "example": "This movie is a real <b>junk</b>.",
+          "example": "This movie is a real <strong>junk</strong>.",
           "solution": "metaphor",
-          "explanation": "we <b>compare</b> the movie to domestic junk in terms of worthiness",
+          "explanation": "we <strong>compare</strong> the movie to domestic junk in terms of worthiness",
           "model": "creation is every-day life"
         },
         {
-          "example": "Don't <b>be</b> that way.",
+          "example": "Don't <strong>be</strong> that way.",
           "solution": "metonymy",
-          "explanation": "we <b>relate</b> a person to that person's behaviour",
+          "explanation": "we <strong>relate</strong> a person to that person's behaviour",
           "model": "person for behaviour"
         },
         {
-          "example": "Many developers write <b>ugly</b> code.",
+          "example": "Many developers write <strong>ugly</strong> code.",
           "solution": "metaphor",
-          "explanation": "we <b>compare</b> quality, readability or maintainability of code with beauty",
+          "explanation": "we <strong>compare</strong> quality, readability or maintainability of code with beauty",
           "model": "quality is beauty"
+        },
+        {
+          "example": "He is a firecracker, ready to explode",
+          "solution": "metaphor",
+          "explanation": "we <strong>compare</strong> someone's unpredictable temper with an unpredictable device",
+          "model": "person is device"
+        }
+      ]
+    },
+    {
+      "title": "Poetry",
+      "questions": [
+        {
+          "example": "Friends, Romans, countrymen, lend me your <strong>ears</strong>. (Shakespeare)",
+          "solution": "metonymy",
+          "explanation": "Shakespeare <strong>relates</strong> an organ to its function",
+          "model": "organ for function"
+        },
+        {
+          "example": "Life's but a <strong>walking shadow</strong> (Shakespeare)",
+          "solution": "metaphor",
+          "explanation": "Shakespeare <strong>compares</strong> life to a shadow based, stressing the nature of existence",
+          "model": "human is world"
+        },
+        {
+          "example": "His <strong>flashing</strong> eyes, his <strong>floating</strong> hair! (Coleridge)",
+          "solution": "metaphor",
+          "explanation": "Coleridge <strong>compares</strong> the appearance of Death using words that usually describe nature rather than living being",
+          "model": "being is nature"
+        },
+        {
+          "example": "The yellow fog that <strong>rubs its back</strong> upon the window-panes",
+          "solution": "metaphor",
+          "explanation": "T. S. Eliot <strong>compares</strong> the behaviour of the fog to the behaviour of a cat, to stress its capriciousness",
+          "model": "fog is cat"
+        },
+        {
+          "example": "<strong>Gray</strong>, dear friend, is all theory, and <strong>green</strong> is life's golden tree.",
+          "solution": "metonymy",
+          "explanation": "Goethe <strong>relates</strong> gray and green colour to their usual symbolic representations",
+          "model": "colour is abstract world"
+        },
+        {
+          "example": "The secret to my poems is that they <strong>rhyme</strong> with eternity",
+          "solution": "metaphor",
+          "explanation": "Miłosz <strong>compares</strong> someone's unpredictable temper with an unpredictable device",
+          "model": "person is device"
         }
       ]
     },
@@ -39,33 +86,33 @@
       "title": "Administrative or journalist style",
       "questions": [
         {
-          "example": "Using <b>graphic</b> language at work has been long frowned upon.",
+          "example": "Using <strong>graphic</strong> language at work has been long frowned upon.",
           "solution": "metonymy",
-          "explanation": "we <b>relate</b> visual explicitness to verbal one",
+          "explanation": "we <strong>relate</strong> visual explicitness to verbal one",
           "model": "visual for verbal"
         },
         {
-          "example": "Using graphic language at work has been long <b>frowned upon</b>.",
+          "example": "Using graphic language at work has been long <strong>frowned upon</strong>.",
           "solution": "metonymy",
-          "explanation": "we <b>relate</b> a certain face gesture to the usual meaning of that gesture",
+          "explanation": "we <strong>relate</strong> a certain face gesture to the usual meaning of that gesture",
           "model": "gesture for meaning"
         },
         {
-          "example": "The question is where the <b>line should be drawn</b>.",
+          "example": "The question is where the <strong>line should be drawn</strong>.",
           "solution": "metaphor",
-          "explanation": "we <b>compare</b> a graphical line, often used as delimiter, to the limit in general",
+          "explanation": "we <strong>compare</strong> a graphical line, often used as delimiter, to the limit in general",
           "model": "visual is semantic"
         },
         {
-          "example": "There is no reason to use such <b>harsh</b> words.",
+          "example": "There is no reason to use such <strong>harsh</strong> words.",
           "solution": "metaphor",
-          "explanation": "we <b>compare</b> harshness of certain words to physical harshness",
+          "explanation": "we <strong>compare</strong> harshness of certain words to physical harshness",
           "model": "language is physical world"
         },
         {
-          "example": "Our guest is the principal <b>viola</b> in the Concertgebouworkest.",
+          "example": "Our guest is the principal <strong>viola</strong> in the Concertgebouworkest.",
           "solution": "metonymy",
-          "explanation": "we <b>relate</b> an instrumentalist to the instrument he plays",
+          "explanation": "we <strong>relate</strong> an instrumentalist to the instrument he plays",
           "model": "worker for tool"
         }
       ]
@@ -76,31 +123,31 @@
         {
           "example": "<head>",
           "solution": "metaphor",
-          "explanation": "we <b>compare</b> the HTML <head> element with the living being's head in terms of its relative position",
+          "explanation": "we <strong>compare</strong> the HTML <head> element with the living being's head in terms of its relative position",
           "model": "html is living being"
         },
         {
           "example": "<article>",
           "solution": "metonymy",
-          "explanation": "we <b>relate</b> the HTML <article> element with what it contains",
+          "explanation": "we <strong>relate</strong> the HTML <article> element with what it contains",
           "model": "container for content"
         },
         {
           "example": "<main>",
           "solution": "metonymy",
-          "explanation": "we <b>relate</b> the HTML <main> element with its semantical position in the document's hierarchy",
+          "explanation": "we <strong>relate</strong> the HTML <main> element with its semantical position in the document's hierarchy",
           "model": "element for role"
         },
         {
           "example": "<label>",
           "solution": "metaphor",
-          "explanation": "we <b>compare</b> the HTML <label> element with the physical label in terms of function",
+          "explanation": "we <strong>compare</strong> the HTML <label> element with the physical label in terms of function",
           "model": "html is physical world"
         },
         {
           "example": "<aside>",
           "solution": "metonymy",
-          "explanation": "we <b>relate</b> the HTML <aside> element with its position on screen",
+          "explanation": "we <strong>relate</strong> the HTML <aside> element with its position on screen",
           "model": "element for position"
         }
       ]
@@ -109,27 +156,27 @@
       "title": "HTML attributes",
       "questions": [
         {
-          "example": "<input type=\"<b>radio</b>\">",
+          "example": "<input type=\"<strong>radio</strong>\">",
           "solution": "metaphor",
-          "explanation": "we <b>compare</b> the value of an attribute with buttons on an actual radio receiver in terms that selecting one deselects others",
+          "explanation": "we <strong>compare</strong> the value of an attribute with buttons on an actual radio receiver in terms that selecting one deselects others",
           "model": "html form is radio device"
         },
         {
-          "example": "<input type=\"<b>reset</b>\">",
+          "example": "<input type=\"<strong>reset</strong>\">",
           "solution": "metonymy",
-          "explanation": "we <b>relate</b> the value of an attribute to what this <input> element does",
+          "explanation": "we <strong>relate</strong> the value of an attribute to what this <input> element does",
           "model": "attribute for purpose"
         },
         {
-          "example": "<video src=\"video.mp4\" <b>poster</b>=\"image.jpg\">",
+          "example": "<video src=\"video.mp4\" <strong>poster</strong>=\"image.jpg\">",
           "solution": "metaphor",
-          "explanation": "we <b>compare</b> the name of an attribute to a physical poster in terms of appearance",
+          "explanation": "we <strong>compare</strong> the name of an attribute to a physical poster in terms of appearance",
           "model": "html is physical world"
         },
         {
-          "example": "<label <b>for</b>=\"username\">",
+          "example": "<label <strong>for</strong>=\"username\">",
           "solution": "metonymy",
-          "explanation": "we <b>relate</b> the name of an attribute to the purpose of connecting the label to its corresponding form element",
+          "explanation": "we <strong>relate</strong> the name of an attribute to the purpose of connecting the label to its corresponding form element",
           "model": "attribute name for purpose"
         }
       ]
@@ -138,33 +185,33 @@
       "title": "CSS attributes",
       "questions": [
         {
-          "example": "display: <b>flex</b>",
+          "example": "display: <strong>flex</strong>",
           "solution": "metaphor",
-          "explanation": "we <b>compare</b> the flexibility of items within flexbox to the flexibility in nature",
+          "explanation": "we <strong>compare</strong> the flexibility of items within flexbox to the flexibility in nature",
           "model": "css is physical world"
         },
         {
-          "example": "background-size: <b>contain</b>",
+          "example": "background-size: <strong>contain</strong>",
           "solution": "metonymy",
-          "explanation": "we <b>relate</b> the value to the purpose, e.g. it should be contained in the parent element",
+          "explanation": "we <strong>relate</strong> the value to the purpose, e.g. it should be contained in the parent element",
           "model": "value for purpose"
         },
         {
-          "example": "<b>box</b>-sizing: border-box;",
+          "example": "<strong>box</strong>-sizing: border-box;",
           "solution": "metaphor",
-          "explanation": "we <b>compare</b> an HTML element to the physical box in terms that both are in rectangular shape",
+          "explanation": "we <strong>compare</strong> an HTML element to the physical box in terms that both are in rectangular shape",
           "model": "html is physical world"
         },
         {
-          "example": "font-size: <b>inherit</b>",
+          "example": "font-size: <strong>inherit</strong>",
           "solution": "metaphor",
-          "explanation": "we <b>compare</b> inheriting a property from parent element in CSS to the way children in the real world inherit properties from their parents",
+          "explanation": "we <strong>compare</strong> inheriting a property from parent element in CSS to the way children in the real world inherit properties from their parents",
           "model": "css is physical world"
         },
         {
-          "example": "cursor: <b>wait</b>",
+          "example": "cursor: <strong>wait</strong>",
           "solution": "metonymy",
-          "explanation": "we <b>relate</b> the value to the message, meaning that cursor shape should suggest user should wait until current action is done",
+          "explanation": "we <strong>relate</strong> the value to the message, meaning that cursor shape should suggest user should wait until current action is done",
           "model": "value for purpose"
         }
       ]
@@ -173,33 +220,33 @@
       "title": "JS keywords",
       "questions": [
         {
-          "example": "const getPosts = new <b>Promise</b>((resolve, reject) => { ... })",
+          "example": "const getPosts = new <strong>Promise</strong>((resolve, reject) => { ... })",
           "solution": "metaphor",
-          "explanation": "we <b>compare</b> promise in JS with promise in real life in terms that promise can be either fulfilled or not",
+          "explanation": "we <strong>compare</strong> promise in JS with promise in real life in terms that promise can be either fulfilled or not",
           "model": "API is real life"
         },
         {
-          "example": ".<b>then</b>(() => { ... }).catch(() => { ... })",
+          "example": ".<strong>then</strong>(() => { ... }).catch(() => { ... })",
           "solution": "metonymy",
-          "explanation": "we <b>relate</b> the name of code block to the time context in which it will be executed",
+          "explanation": "we <strong>relate</strong> the name of code block to the time context in which it will be executed",
           "model": "name for time context"
         },
         {
-          "example": "<b>catch</b>(() => { ... })",
+          "example": "<strong>catch</strong>(() => { ... })",
           "solution": "metaphor",
-          "explanation": "we <b>compare</b> catching an API error to catching a physical object in terms of purpose, to prevent it from falling and breaking",
+          "explanation": "we <strong>compare</strong> catching an API error to catching a physical object in terms of purpose, to prevent it from falling and breaking",
           "model": "API is real life"
         },
         {
-          "example": "event.<b>bubbles</b>",
+          "example": "event.<strong>bubbles</strong>",
           "solution": "metaphor",
-          "explanation": "we <b>compare</b> bubbling in JS to the movement of physical bubbles, which move upwards, like event bubbles up the DOM tree",
+          "explanation": "we <strong>compare</strong> bubbling in JS to the movement of physical bubbles, which move upwards, like event bubbles up the DOM tree",
           "model": "DOM is real world"
         },
         {
-          "example": "const { isThinking, isConnected } = <b>this</b>.props",
+          "example": "const { isThinking, isConnected } = <strong>this</strong>.props",
           "solution": "metonymy",
-          "explanation": "using a pronoun instead of noun is by default metonymical, and we <b>relate</b> 'this' for the container class",
+          "explanation": "using a pronoun instead of noun is by default metonymical, and we <strong>relate</strong> 'this' for the container class",
           "model": "pronoun for noun"
         }
       ]
@@ -210,28 +257,29 @@
         {
           "example": "const { someProp, otherProp } = whatever",
           "solution": "metonymy",
-          "explanation": "destructuring is a metonymical concept. We <b>relate</b> object properties to parent object",
+          "explanation": "destructuring is a metonymical concept. We <strong>relate</strong> object properties to parent object",
           "model": "part for whole"
         },
         {
           "example": "someArray.forEach((item, index) => { ... })",
           "solution": "metonymy",
-          "explanation": "any iteration in any programming language is metonymical. We <b>relate</b> currently iterated item to parent",
+          "explanation": "any iteration in any programming language is metonymical. We <strong>relate</strong> currently iterated item to parent",
           "model": "part for whole"
         },
         {
           "example": "function fct(a) { if (a === 1) { return a } return a * fct(a - 1) }",
           "solution": "metonymy",
-          "explanation": "recursion is probably the most metonymical of all, because we <b>relate</b> recursive function to nothing else but itself",
+          "explanation": "recursion is probably the most metonymical of all, because we <strong>relate</strong> recursive function to nothing else but itself",
           "model": "part for whole"
         },
         {
           "example": "return (b) => { return (c) => { return a + b * c }}",
           "solution": "metonymy",
-          "explanation": "currying is typically metonymical. We <b>relate</b> every further function to the outcome of the previous in the chain",
+          "explanation": "currying is typically metonymical. We <strong>relate</strong> every further function to the outcome of the previous in the chain",
           "model": "successor for predecessor"
         }
       ]
     }
   ]
 }
+
